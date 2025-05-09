@@ -5,6 +5,8 @@ A single Bash script to create blogs.
 
 And this is what I use to make https://apfelhammer.de :-) In my weblog I write about how it is to live with an Powermac G5 11,2 on 2025 and how to use it with PPC64 Linux.
 
+![](apfelhammer.de.png)
+
 I installed different Distros to try out, on an NVMe-SSD
 
 * Arch Linux 
