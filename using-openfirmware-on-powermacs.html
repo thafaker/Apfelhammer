@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://apfelhammer.de">
+<!-- Die H-Karte Junge -->
+<div class="h-card" style="display: none;">
+    <a class="u-url" href="https://apfelhammer.de" style="display: none;">Apfelhammer</a>
+    <a class="u-url" href="https://thahipster.de" style="display: none;">thahipster.de</a>
+    <a class="u-url" href="https://herrmontag.de" style="display: none;">HerrMontag.de</a>
+    <p class="p-name">Jan Montag</p>
+    <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
+</div>
+		<!-- all rel mes -->
+			<link rel="me" href="https://thahipster.de" />
+			<link rel="me" href="https://thafaker.crabdance.com" />
+			<link rel="me" href="https://janmontag.de" />
+			<link rel="me" href="https://thafaker.de" />
+			<link rel="me" href="https://herrmontag.de" />
+			<link rel="me" href="https://apfelhammer.de" />
+			<link rel="me" href="https://bsky.app/profile/herrmontag.de" />
+			<link rel="me" href="https://open.spotify.com/user/31pff5mvgaxh2npxksruczaef3li" />
+			<link rel="me" href="https://instagram.com/vinylisation/" />
+			<link rel="me" href="https://www.instagram.com/herr_montag_/" />
+			<link rel="me" href="https://twitter.com/ErfurterDom" />
+     		<link rel="me" href="https://mastodon.art/@herrmontag_de" />
+ 			<link rel="me" href="https://defcon.social/@apfelhammer" />
+			<link rel="me" href="hallo@herrmontag.de" />
+			<link rel="webmention" href="https://webmention.io/apfelhammer.de/webmention" />
+			<link rel="me" href="https://apfelhammer.de">
+			<link rel="pingback" href="https://webmention.io/apfelhammer.de/xmlrpc" />
+			<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+			<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+			<link href="https://github.com/thafaker" rel="me">
+			<link rel="me" href="https://github.com/thafaker" />
+		<!-- all rel mes -->
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
+<!-- Alternative icons for different devices -->
+<link rel="icon" type="image/png" sizes="16x16" href="/Logo/logo_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Logo/logo_32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/Logo/logo_64x64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/Logo/logo_256x256.png">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/Logo/logo_256x256.png">
+<link rel="stylesheet" href="enough.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Using OpenFirmware on Powermacs</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
+<div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
+<hr>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<hr>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="using-openfirmware-on-powermacs.html">
+Using OpenFirmware on Powermacs
+</a></h3>
+<!-- bashblog_timestamp: #202412271016.35# -->
+<div class="subtitle">December 27, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>There is always the discussion around if the Powermacs are able to boot from USB or 
+not and I can say: every Powermac G5 is able to boot from USB Thumbdrive. So it
+is quite easy to dd an ISO of Linux or Leopard to an USB-Drive and boot-up the
+Powermac G5 with it. But also older Macs. Older Roms. Older Edlers.
+<hr></p>
+
+<h2>Some OpenFirmware Commands</h2>
+
+<h3>Accessing Open Firmware</h3>
+
+<p><strong>Method I</strong>: At the chime, hold down the Option key. The Boot Picker comes up. Press Control + Z to switch to Open Firmware.
+<strong>Method II</strong>: At the chime, hold down Command + Option + O + F until you've arrived at the Open Firmware prompt.</p>
+
+<h3>Running System Diagnostics</h3>
+
+<ul>
+<li>To reset the system NVRAM, enter reset-nvram</li>
+<li>To reset all changes made to Open Firmware, enter set-defaults</li>
+<li>To reset the machine, enter reset-all</li>
+<li>To display a list of all central device aliases, enter devalias</li>
+<li>To display information for a device, enter dev <device alias> .properties ( i.e. dev /cpus .properties | dev screen .properties | dev /memory .properties etc. )
+( Note: The capacity values output by dev /memory .properties are saved in the hexadecimal format and will need to be converted to be understood by most. )</li>
+<li>To display a list of all utilities, enter printenv ( WARNING, DO NOT RUN setenv little-endian? true ! This will brick your machine beyond trivial repair! )</li>
+<li>To check the system hard disk and its partitions without extracting it from the machine, enter target-mode into the prompt. Target Disk Mode comes up. Connect a FireWire cable from the subject machine to another compatible machine. The subject machine's partitions will appear on the other machine, ready for review or remote boot.</li>
+</ul>
+
+<h3>Accessing Open Firmware</h3>
+
+<p><strong>Method I</strong>: At the chime, hold down the Option key. The Boot Picker comes up. Press Control + Z to switch to Open Firmware.
+<strong>Method II</strong>: At the chime, hold down Command + Option + O + F until you've arrived at the Open Firmware prompt.</p>
+
+<h3>Running System Diagnostics</h3>
+
+<ul>
+<li>To reset the system NVRAM, enter reset-nvram</li>
+<li>To reset all changes made to Open Firmware, enter set-defaults</li>
+<li>To reset the machine, enter reset-all</li>
+<li>To display a list of all central device aliases, enter devalias</li>
+<li>To display information for a device, enter dev <device alias> .properties ( i.e. dev /cpus .properties | dev screen .properties | dev /memory .properties etc. ) ( Note: The capacity values output by dev /memory .properties are saved in the hexadecimal format and will need to be converted to be understood by most. )</li>
+<li>To display a list of all utilities, enter printenv (WARNING, DO NOT RUN setenv little-endian? true ! This will brick your machine beyond trivial repair! )</li>
+<li>To check the system hard disk and its partitions without extracting it from the machine, enter target-mode into the prompt. Target Disk Mode comes up. Connect a FireWire cable from the subject machine to another compatible machine. The subject machine's partitions will appear on the other machine, ready for review or remote boot.</li>
+</ul>
+
+<h3>Booting an Operating System</h3>
+
+<ul>
+<li>To automatically enter Open Firmware upon boot, enter setenv auto-boot? false (Enter setenv auto-boot? true to revert to default. )</li>
+<li>To set a default boot volume, enter setenv boot-device <volume>:<partition ID>,<path> (i.e. setenv boot-device hd:1,\:tbxi | setenv boot-device cd:,\yaboot | setenv boot-device ud:,ofwboot | etc. ) ( If no partition ID is provided, the system will look for the first available OS on the specified volume. If none are found, the system will either revert back to Open Firmware, or display a "do not cross" symbol. )</li>
+<li>To boot between locally installed operating systems, enter multi-boot into the prompt. The Boot Picker comes up.</li>
+</ul>
+
+<p><small><strong>Note</strong>: The utility's interface and control methods may vary between versions.</small></p>
+
+<p>To boot from a USB disk, enter one of the following depending on the targeted OS (OF V. 4.9 / 5.2 Only) -</p>
+
+<ul>
+<li>Mac OS X: <code>boot ud:,\:tbxi</code></li>
+<li>Linux (YABOOT): <code>boot ud:,\yaboot</code></li>
+<li>Linux (GRUB): <code>boot ud:,\grub.img</code></li>
+<li>OpenBSD: <code>boot ud:,ofwboot</code></li>
+</ul>
+
+<p><strong>MERKE</strong>: You need to adjust these settings, because grub and grub2 are different and sometimes
+the grub.img is laying somewhere else. On <a href="https://www.adelielinux.org">Adelie Linux PPC64</a> you can boot from 
+USB on a Powermac G5 with the following command <code>boot ud:,\boot\grubcore.img</code></p>
+
+<ul>
+<li>To boot from a USB disk on OF V. 4.8 / 5.1 and lower, replace 'ud:,' with 'usb0/disk@1:'. Increase the digit immediately following 'usb' incrementally until successful. Alternatively, also increase the digit immediately following 'disk@' until successful, depending on the OS chosen.</li>
+</ul>
+
+<p>If you are unable to boot Mac OS X using the provided methods, try replacing ':tbxi' with ':3,\System\Library\CoreServices\BootX'.</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_openfirmware.html'>openfirmware</a>, <a href='tag_usb.html'>usb</a></p>
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<!-- entry end -->
+</div>
+<div><!--<h3>Ihre Meinungen:</h3>-->
+                <section class="post-content">
+                 <script data-isso="https://isso.apfelhammer.de/"
+                      src="https://isso.apfelhammer.de/js/embed.min.js"></script>
+                <section id="isso-thread"></section>
+                </section>
+              </div>
+<hr>
+<div id="footer">CC by-nc-nd <a href="https://herrmontag.de/about">Jan Montag</a> &mdash; <a href="mailto:vintage&#64;thafaker&#46;de">vintage&#64;thafaker&#46;de</a><br/>
+Part of famous thahipster network - <a href="https://thahipster.de">thahipster.de</a></div>
+<a href="https://xn--sr8hvo.ws/previous">←</a>
+An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+<a href="https://xn--sr8hvo.ws/next">→</a>
+<p>HITCOUNTER: You are visitor number <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/apfelhammer" alt="several"></a></p>
+</div></div>
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'), 
+        m=f.getElementsByTagName('script')[0]; 
+        o.async=1; o.src=t; o.id='fathom-script'; 
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//fathom.apfelhammer.de/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'FGODV');
+    fathom('trackPageview');
+    </script>
+    <!-- /Fathom -->
+</body></html>

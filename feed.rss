@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel><title>This Is Apfelhammer!</title><link>https://apfelhammer.de/index.html</link>
+<description>a blog about my PowermacG5 in 2025 - and something else</description><language>en</language>
+<lastBuildDate>Thu, 08 May 2025 21:53:49 +0200</lastBuildDate>
+<pubDate>Thu, 08 May 2025 21:53:49 +0200</pubDate>
+<atom:link href="https://apfelhammer.de/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+TermNavi Terminal Navidrome Client ppc64
+</title><description><![CDATA[
+
+<p>So the other day I tried to connect to my <strong>Navidrome</strong> MP3 Streaming Server, 
+I call it "Spotify at Home", via Webinterface to listen to some music, but
+there were no way to do this. The Webbrowsers available are too old. Sad.</p>
+
+<p>So I decided to programm a really small <em>Navidrome Terminal Client</em> called
+TermNavi (yes I know... need better name) to listen to my MP3. And what shall 
+I say? The first implementation is ready. I tested and successfully compiled
+on aarch64 (my MacMini M4) and the legendary Powermac G5 with ARCH Linux or
+Debian Sid ppc64.</p>
+
+<p><img src="images/termnavi.png" alt="" title="" /></p>
+
+<p>So this it is:</p>
+
+<ul>
+<li>MVP for playback</li>
+<li>Rust for pgramming</li>
+<li>Ratatui für the Terminal UI (TUI)</li>
+<li>a Powermac G5 with PPC Linux</li>
+</ul>
+
+<p>Really happy, it is my first rust project. </p>
+
+<h3>known bugs</h3>
+
+<ul>
+<li>State handling is missing</li>
+<li>UI Rendering for more selections</li>
+<li>scroll logic is worst</li>
+</ul>
+
+<p>And as a now cool hacker guy, I pushed everything in my github repo. But don't
+expect too much, I am a worst programmer, I often do not understand what is 
+going on and I have everything in one file, the main.rs :-)</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TermNavi Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/termnavi-terminal-navidrome-client-ppc64.html</link>
+<guid>https://apfelhammer.de/./termnavi-terminal-navidrome-client-ppc64.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Thu, 08 May 2025 21:51:12 +0200</pubDate></item>
+<item><title>
+Claws-Mail 4.3.1 ArchPOWER Linux successfully compiled for PPC64
+</title><description><![CDATA[
+
+<p>Due to the lack of a <em>good graphical email client</em> [^1] for my Arch POWER Linux 
+Distro (Arch Linux for PowerPC), I tried several things and ended up with <strong>claws-mail</strong>. But it is not
+installable or not existing in the repos of pacman for powerpc. So I dcided
+to compile it by myself.</p>
+
+<p>Claws-Mail 4.3.1 just compiled successfully on my Powermac G5.</p>
+
+<p><img src="/images/claws-mail_start.jpg" alt="" title="" />
+<small>claws-mail first window, first start</small></p>
+
+<p>Claws Mail is an email client (and news reader), based on GTK+, featuring:</p>
+
+<ul>
+<li>Quick response</li>
+<li>Graceful, and sophisticated interface</li>
+<li>Easy configuration, intuitive operation</li>
+<li>Abundant features</li>
+<li>Extensibility</li>
+<li>Robustness and stability</li>
+</ul>
+
+<p><img src="/images/screen_grab_claws.png" alt="" title="" />
+<small>todays screenshot of my inbox on claws-mail on my powermac g5</small></p>
+
+<p>Okay, it is an really not beautiful email client, but it works great and we should
+not forget my ancient hardware from 2005 :-)</p>
+
+<p>[^1]: I think there is no one. Not only one.</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://www.claws-mail.org/releases.php">Latest Claws Mail Releases</a></li>
+</ul>
+
+<p>Tags: <a href='tag_archlinux.html'>archlinux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_email.html'>email</a>, <a href='tag_ppc.html'>ppc</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/claws-mail-431-archpower-linux-successfully-compiled.html</link>
+<guid>https://apfelhammer.de/./claws-mail-431-archpower-linux-successfully-compiled.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Fri, 25 Apr 2025 23:36:35 +0200</pubDate></item>
+<item><title>
+Hello ArchPOWER Linux for PPC64
+</title><description><![CDATA[
+
+<p>In a nice <a href="https://apfelhammer.de/hello-t2linux-2504---i-switched-back-to-1224.html#isso-20">comment from Matias</a>, he told me he is using ArchPOWER Linux, an unofficial
+Build of Arch Linux for PowerPC, PPC64, PPC and PPCle for the Power8 Architecture
+etc. pp.; If I remember correctly, I stumbled across this Linux Distro while I
+researched for the best Linux for my Powermac G5, but maybe because I was at
+the beginning of my Linux journey on these machines, I found it to heavy or 
+something else told me not to try. I don't know but it is not important anymore,
+because I installed ArchPOWER Linux current on my NVMe-SSD in the Powermac, 
+multi-booting with T2 Linux, Debian 12 SID, Adelie Linux and Fienix Linux. :-)</p>
+
+<p><img src="/images/fastfetch_arch.png" alt="" title="" /></p>
+
+<hr />
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/hello-archpower-linux-for-ppc64.html</link>
+<guid>https://apfelhammer.de/./hello-archpower-linux-for-ppc64.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Fri, 25 Apr 2025 14:50:13 +0200</pubDate></item>
+<item><title>
+Hello T2/Linux 25.04 - I switched back to 12.24
+</title><description><![CDATA[
+
+<p><strong>Man</strong>, I am a little bit frustrated right now. Everytime a new release of 
+<a href="https://apfelhammer.de/release-t2-linux-254-it-only-does-everything.html">T2/Linux</a>
+is going online, I am really happy to try it out on my <em>Powermac G5</em>. I download
+it and <code>dd</code> it to a USB Stick (<a href="https://apfelhammer.de/how-to-boot-powermac-from-usb.html">here</a> 
+I explain how to boot a PPC Mac from USB) and than boot the Powermac via OpenFirmware
+from that USB Stick and everything works like charme. Like I exspect it.</p>
+
+<p>The Install Process is straight forward and easy, thanks to <em>STONE</em>, the Installer
+of T2. But with Version 25.04 there is a problem, the FANs turn to MAX rotation like
+there is a kernel module not loaded or something like that and you think the G5 
+will soon fly away. The next thing: X seems to be broken, I can't <code>startx</code> 
+anymore. </p>
+
+<p>In <strong>24.12</strong> these things were okay, X works and even 3D-Acceleration works 
+so I could use it in a quite usual way. But now - <em>all of this is gone</em>. 
+Everytime I try, there is another problem. Something other broken. 
+And I am not smart enough to fix it. I do not understand enough and there is
+not enough documentation to get this done. Sure, René is a One-Man-Show with his
+T2 Linux Project and he is fixing a lot of older drivers and software packages
+and he earns nothing and I say thank you man. Great Job. But even in his 
+documentation, I am unable to find the right solution e.g. to crosscompile not the 
+whole target, just a package and all of it's depencies.</p>
+
+<p>I never got <em>Palemoon</em> or <em>ArcticFox</em> compiled or crosscompiled, because there
+are errors I canot solve. I installed <strong>T2/ARM64</strong> on my <em>Mac Mini M4</em> because this
+small machine is really powerful so it is a great crosscompoling solution for
+the me at home for my PPC64 Powermac. 
+But it starts while compiling gcc. I am unable to compile GCC. And 
+without GCC there is no way to compile anything further.</p>
+
+<hr />
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/hello-t2linux-2504---i-switched-back-to-1224.html</link>
+<guid>https://apfelhammer.de/./hello-t2linux-2504---i-switched-back-to-1224.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Mon, 21 Apr 2025 19:27:49 +0200</pubDate></item>
+<item><title>
+How do I run update-grub from another Partition or a LiveCD?
+</title><description><![CDATA[
+
+<p>As you know my Setup, I will shortly explain again. In my Powermac G5 there is 
+an SATA-SSD as a replacement for the old spinning Apple HDD. On this SSD I 
+installed Mac OX 10.5 and also Debian SID for PPC, to get the Partition-Scheme
+and GRUB installed.</p>
+
+<p>I also built in a NVMe-SSD with 1 TB because the Powermac11,2 has PCI-Express
+Slots like it is standard nowadays. The OpenFirmware in the Powermac doesn't 
+know what an NVMe-SSD is and therefore can't recognize it or boot it. Also 
+Mac OS X 10.5 doesn't <em>see</em> the device. The technic is too young and there are
+no drivers, that is the reason for that.</p>
+
+<p>But lucklily, Linux has the drivers for that. And that's the reason for my Setup.
+Boot Grub from SSD because that can the Powermac. Than load the things you need
+for NVMe and boot the linux off the NVMe-SSD.</p>
+
+<p>I have 4 Linux on that NVMe-SSD and that works great. But it is a problem to 
+update the Grub Bootloader everytime there is a new kernerl or something other
+changed. Long story short, here I will tell (me) you, how to update grub via chroot.</p>
+
+<hr />
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/how-do-i-run-update-grub-from-another-partition-or-a-livecd.html</link>
+<guid>https://apfelhammer.de/./how-do-i-run-update-grub-from-another-partition-or-a-livecd.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Thu, 17 Apr 2025 17:56:13 +0200</pubDate></item>
+<item><title>
+FeeDOS 1.4 is there
+</title><description><![CDATA[
+
+<p><img src="/images/screenshot_freedos14.png" alt="" title="" />
+<small>FreeDoS 1.4 Screenshot by freedos.org</small></p>
+
+<p>As you all know, I'm a big fan of vintage computers. In addition to an iMac G3, a C64, and an Amiga 500/1200, I also run an MS-DOS PC with Windows 3.11 and networking capabilities. To enable file sharing, I have a small Samba 1 server running.</p>
+
+<p>So it's all the more exciting to see that the fantastic FreeDOS project has released a new version. FreeDOS 1.4 is here.</p>
+
+<blockquote>
+  <p>FreeDOS is an open source DOS-compatible operating system that you can use to play classic DOS games, run legacy business software, or write new DOS programs. Any program that works on MS-DOS should also run on FreeDOS.</p>
+</blockquote>
+
+<p>FreeDOS runs on everything, from CD-Rom or USB. FreeDOS 1.4 even includes a floppy-only edition! This edition should run on any original IBM PC system, including the PC, XT, and AT. Provides versions for 720kB, 1.2MB, and 1.44MB floppy disks.</p>
+
+<p>(<a href="https://medium.com/@Re-News/freedos-1-4-8232422f2549">via</a>)</p>
+
+<h2>Ressources</h2>
+
+<ul>
+<li><a href="https://freedos.org">FreeDOS Website</a></li>
+<li><a href="https://freedos.org/download/">FreeDOS 1.4 Download</a></li>
+</ul>
+
+<p>Tags: <a href='tag_freedos.html'>freedos</a></p>
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/feedos-14-is-there.html</link>
+<guid>https://apfelhammer.de/./feedos-14-is-there.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Wed, 16 Apr 2025 23:06:58 +0200</pubDate></item>
+<item><title>
+Release: T2 Linux 25.4 "It Only Does Everything"
+</title><description><![CDATA[
+
+<p>A lot of crazy things happen right now. A few minutes ago <a href="https://apfelhammer.de/update-to-fienix-linux.html">I reported about the
+living sign of Fienix</a> Linux after the APT Repo down and now I see there is a
+<a href="https://t2sde.org/#news-2025-04-14">new version of latest and greatest T2 Linux</a> (ver. 25.4) from Rene Rebe. </p>
+
+<blockquote>
+  <p>With a total of 17 pre-compiled base install ISOs for various Glibc, Musl and uClibc combinations are available for 12 CPU ISAs: Alpha, ARM(64), HPPA64, IA64, MIPS64, PowerPC(64), RISCV64, SPARC64, i586, x86-64. On most architectures the release still boots with as little as 512MB of RAM or even less, and ISO downloads are less than 2GB for base Wayland desktop with Firefox.</p>
+</blockquote>
+
+<p>T2 runs well on my <em>Powermac G5</em>, as I stated <a href="https://apfelhammer.de/new-release-of-t2linux.html">here</a> for detail.</p>
+
+<h2>Ressources</h2>
+
+<ul>
+<li><a href="https://t2sde.org/#news-2025-04-14">T2/SDE 25.4 announcement</a></li>
+<li><a href="https://t2sde.org/download/25.4">T2 Download Portal for 25.4</a></li>
+<li><a href="https://dl.t2sde.org/binary/2025/t2-25.4-ppc6432-base-wayland-glibc-gcc-power4.iso">T2 Linux for direct download for PPC64/32</a> (64-bit OS kernel, 32-bit user-space)</li>
+<li><a href="https://t2sde.org">T2 Main Website</a></li>
+<li><a href="https://t2sde.org/documentation/buildintro.html">Quick Build in seven-1 easy steps</a></li>
+<li><a href="https://t2sde.org/documentation/kb/8/?documentation/kb/8">Getting started w/ a fresh T2 install</a></li>
+<li><a href="https://medium.com/@Re-News">Rene Rebes Medium Blog</a></li>
+</ul>
+
+<p>Tags: <a href='tag_t2linux.html'>t2linux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/release-t2-linux-254-it-only-does-everything.html</link>
+<guid>https://apfelhammer.de/./release-t2-linux-254-it-only-does-everything.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Mon, 14 Apr 2025 15:57:55 +0200</pubDate></item>
+<item><title>
+Update to Fienix Linux
+</title><description><![CDATA[
+
+<p>As I wrote in a <a href="https://apfelhammer.de/fienix-linux-for-ppc-computers.html">few</a> 
+articles before, I am a big fan of <strong>Fienix Linux</strong> because it works 
+absolutely amazing on my Powermac G5, it can even render
+complex and modern Websites like my other Weblog (Ghost CMS) and all the big
+and modern new Websites.</p>
+
+<p>However, as I continued to use Fienix, I found out that I couldn't 
+install any updates or other software packages. After some research, 
+I discovered that the <em>Fienix APT Repo</em> <a href="https://apfelhammer.de/fieneix-linux-seems-to-be-dead.html">was down</a>. I asked at the corresponding
+youtube channel and even at the Website, but there was no answer.</p>
+
+<p>Today, almost by chance, I discovered the official article on the Fienix 
+website. The developer writes:</p>
+
+<blockquote>
+  <p>The Fienix software repository was "unreconciled" due to an unexpected interruption to an update process. Unfortunately, a backup did not exist. Effort to reconcile the repository were unsuccessful. This caused package unavailability, broken packages and broken updates. </p>
+</blockquote>
+
+<p>He can't fix it in Version 6 so he hopes to get it fixed with Version 7, what
+is months ago. His solution as follows:</p>
+
+<blockquote>
+  <p>If you have installed all the packages you want/need, you don't need to do anything. Browser updates are generally posted to the "Linux on PowerPC" Facebook group, Hyperion forums, and elsewhere. You can also get packages from Debian, or switch over to Debian completely.</p>
+</blockquote>
+
+<p>At this point I find it really good that the website, the project and Fienix
+Linux itself is not dead, it's has a broken APT Repo and need to be fixed, but
+the developer is willing to continue. That gives me hope for my Powermac G5.</p>
+
+<p><strong>Keep up the great work</strong></p>
+
+<p>(<a href="https://fienixppc-news.blogspot.com/2025/02/repository-down.html">via</a>)</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_eolie.html'>eolie</a>, <a href='tag_browser.html'>browser</a>, <a href='tag_fienix.html'>fienix</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/update-to-fienix-linux.html</link>
+<guid>https://apfelhammer.de/./update-to-fienix-linux.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Mon, 14 Apr 2025 15:31:22 +0200</pubDate></item>
+<item><title>
+Backslash, German iMac Keyboard and OpenFirmware
+</title><description><![CDATA[
+
+<p>I had problems typing the backslash "\" and bar "|" on my iMac
+keyboard when in the OpenFirmware user interface.</p>
+
+<p><a href="/images/imac_g3_ppc.jpg"><img src="/images/imac_g3_ppc.jpg" alt="iMac G3" title="" /></a>
+<small>A picture of my iMac G3 while in Open Firmware</small></p>
+
+<hr>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/backslash-german-imac-keyboard-and-openfirmware.html</link>
+<guid>https://apfelhammer.de/./backslash-german-imac-keyboard-and-openfirmware.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Mon, 24 Feb 2025 09:46:23 +0100</pubDate></item>
+<item><title>
+Mac OS X 10.5.8 with modern Browser
+</title><description><![CDATA[
+
+<p>As you can see in the screenshot, I am visiting both my weblog and amazon.de
+Websites with the Powermac G5 2,0 GHz. This is only possible because there
+is a relative modern webbrowser (2022) by user wicknix, built upon <strong>TenFourFox</strong>.</p>
+
+<p><a href="images/interweb.png"><img src="images/interweb.jpg" alt="" title="" /></a>
+<small>InterWebPPC: Mozilla for Power Macintosh</small></p>
+
+<p>So with this webbrowser the old 20 years old Powermac is able to visit modern
+websites like Amazon. No, I dont like amazon, but is is an example. Youtube
+also works, but loads a lot longer.</p>
+
+<p>With this browser it is possible to use the mac in a day to day modern web world,
+but slow. I can even access webmails, read yahoo news or something like that
+while chatting via <em>colloguy</em> and telnetting into my server.</p>
+
+<p>Really sad to read this: </p>
+
+<blockquote>
+  <p>This repository has been archived by the owner on Jul 26, 2023. It is now read-only.</p>
+</blockquote>
+
+<p>Another good one is gone, but wicknix do have his reasons I bet.</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li>https://github.com/wicknix/InterWebPPC</li>
+</ul>
+
+<p>Tags: <a href='tag_macosx.html'>macosx</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_firefox.html'>firefox</a>, <a href='tag_leopard.html'>leopard</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/mac-os-x-1058-with-modern-browser.html</link>
+<guid>https://apfelhammer.de/./mac-os-x-1058-with-modern-browser.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Sat, 15 Feb 2025 14:50:45 +0100</pubDate></item>
+</channel></rss>

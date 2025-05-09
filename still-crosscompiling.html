@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://apfelhammer.de">
+<!-- Die H-Karte Junge -->
+<div class="h-card" style="display: none;">
+    <a class="u-url" href="https://apfelhammer.de" style="display: none;">Apfelhammer</a>
+    <a class="u-url" href="https://thahipster.de" style="display: none;">thahipster.de</a>
+    <a class="u-url" href="https://herrmontag.de" style="display: none;">HerrMontag.de</a>
+    <p class="p-name">Jan Montag</p>
+    <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
+</div>
+		<!-- all rel mes -->
+			<link rel="me" href="https://thahipster.de" />
+			<link rel="me" href="https://thafaker.crabdance.com" />
+			<link rel="me" href="https://janmontag.de" />
+			<link rel="me" href="https://thafaker.de" />
+			<link rel="me" href="https://herrmontag.de" />
+			<link rel="me" href="https://apfelhammer.de" />
+			<link rel="me" href="https://bsky.app/profile/herrmontag.de" />
+			<link rel="me" href="https://open.spotify.com/user/31pff5mvgaxh2npxksruczaef3li" />
+			<link rel="me" href="https://instagram.com/vinylisation/" />
+			<link rel="me" href="https://www.instagram.com/herr_montag_/" />
+			<link rel="me" href="https://twitter.com/ErfurterDom" />
+     		<link rel="me" href="https://mastodon.art/@herrmontag_de" />
+ 			<link rel="me" href="https://defcon.social/@apfelhammer" />
+			<link rel="me" href="hallo@herrmontag.de" />
+			<link rel="webmention" href="https://webmention.io/apfelhammer.de/webmention" />
+			<link rel="me" href="https://apfelhammer.de">
+			<link rel="pingback" href="https://webmention.io/apfelhammer.de/xmlrpc" />
+			<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+			<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+			<link href="https://github.com/thafaker" rel="me">
+			<link rel="me" href="https://github.com/thafaker" />
+		<!-- all rel mes -->
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
+<!-- Alternative icons for different devices -->
+<link rel="icon" type="image/png" sizes="16x16" href="/Logo/logo_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Logo/logo_32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/Logo/logo_64x64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/Logo/logo_256x256.png">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/Logo/logo_256x256.png">
+<link rel="stylesheet" href="enough.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Still crosscompiling</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
+<div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
+<hr>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<hr>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="still-crosscompiling.html">
+Still crosscompiling
+</a></h3>
+<!-- bashblog_timestamp: #202412151519.36# -->
+<div class="subtitle">December 15, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I own this late and great <em>Powermac11,2</em> <strong>Powermac G5</strong> Dual Core 2,0 GHz and 
+I love this machine for being what it is: a great <em>retrobattle station</em> 
+and also a sexy <em>workstation</em>. It is so clean, no cables, 
+everything can be accessed easily. </p>
+
+<p><img src="/images/late_2005.jpg" alt="Powermac G5 late 2005" title="" /></p>
+
+<hr>
+
+<p>Even the PowerPC 970MP [^1] Processors are
+known for getting really hot, the machine fans are not loud even under
+heavy load while compiling latest e.g. Firefox Version 133 for PPC64. 
+And this is the moment were I want to setup something to crosscompile. 
+Because I don't want to run the Powermac all day and all night with 78 degree 
+Celcius all the time while compiling and I don't want to consump so much 
+electrical energy.</p>
+
+<p><img src="/images/powermacg_g5_usb_front.jpg" alt="Powermac G5 Front-USB" title="" /></p>
+
+<p>And here is why I decided this way. An <code>./t2 upgrade</code> command will 
+last for complete 7 days and 14 hours. It is a command were I first updated 
+the SVN Tree with <code>svn up</code> and than did that upgrade, 
+like <code>apt-get dist-upgrade</code>. But in T2/Linux, there are no binary 
+packages. Everything is built from scrath like in Gentoo Linux. 
+That's good. That's bad. :-)</p>
+
+<p><img src="/images/worscht.png" alt="Powermac G5 T2/SDE Linux Upgrade Time" title="" /></p>
+
+<p>So I setupped my <strong>Mac Mini M4</strong> (Standard) to crosscompile for 
+PPC64 - and I tried a lot of different things to get this done. 
+But nothing worked from start to the end yet. </p>
+
+<p><img src="/images/cpu.png" alt="Powermac G5 Front-USB" title="" /></p>
+
+<p>I installed QEMU and installed a PPC64 Distro. There are not a lot of PPC64
+capable Linux Distros outside, all the main ones dropped support. But there
+is a an inofficial version of DEBIAN for PPC64 [^3] or one from ARCH Linux and
+also SUSE. So I decided to install DEBIAN on both my Powermac G5 and in
+a QEMU virtualiziation on that M4. But that ran not good, I often got 
+hard locked kernel errors so I moved forward and install a UBUNTU for ARM64 
+in a Docker Container with only crosstool-ng software to crosscompile from 
+there to ppc64. I tried with Firefox. But there are a lot of problems 
+regarding the BIG ENDIANess of PPC64, all the other CPUs (Architectures) like 
+x86 or ARM are using <em>Littel Endian</em>. But that also does'nt work and I 
+decided to install <strong>T2/SDE Linux</strong> from famous Kernel Hacker <em>Rene Rebe</em> into 
+qemu and later into a Parallels Installation as both PPC64 and then ARM64.</p>
+
+<p><img src="/images/crosscompiling.png" alt="T2/SDE is crosscompiling" title="" /></p>
+
+<p>PPC64 in QEMU is the same as in real hardware and no crosscompiling is needed, 
+which is easier to maintain, slower but fewer problems while compiling, but it 
+is really slow (even when you not emulate a PPC 970 Processor from 2004 but a 
+Power9 from 2015) and also there were that HARD LOCKED KERNEL Errors, but 
+arm64 crosscompiling is to complex to get it work properly. Not to talk about 
+the try to install crosstool-ng (wich I had success with) with HomeBrew in 
+macOS directly, but had the problem of the endianesses again :( So nothing of 
+that worked and I tried to install another ARM64 version of T2/Linux in 
+<strong>VirtualBox</strong>. This because in VirtualBox there are no restrictions if you 
+use a free plan version like me with Parallels, regarding the numbers of cpus 
+or the amount of ram (only 4 Processors, only 8 GB of Ram).</p>
+
+<p>But... also here I have problems and I am not smart enough to figure out how
+to crosscompile from the Start to the End in a way with T2/SDE that my Packages are working on the 
+Powermac G5. I want to compile complex things like GNome or Firefox or a whole updated PPC64 Distro-ISO File. 
+I compiled a whole Desktop / X.Org / PPC64 G5 optimizied World but in the End
+I am unable to compile sysfsutils (actually) and the process breaks, 
+I always get the folling error:</p>
+
+<p><code>
+bash-5.2# ./t2 build-target --cfg system</p>
+
+<p>Removing old error logs ...
+Removing var/adm/logs/2-sysfsutils.err ...</p>
+
+<p>15:22:34 Building 2-filesystem/sysfsutils (2.1.0) ~9s
+  Building in src.sysfsutils.system.241215.152233.11505, with 8 threads
+  Writing output to $root/var/adm/logs/2-sysfsutils.out
+  Corrected ./ltmain.sh
+! checking whether build environment is sane... yes
+! checking for gawk... gawk
+! checking whether make sets $(MAKE)... yes
+! checking for powerpc64-t2-linux-gnu-strip... powerpc64-t2-linux-gnu-strip
+! checking build system type... Invalid configuration `aarch64-nocross-linux ..
+! configure: error: /bin/sh ./config.sub aarch64-nocross-linux-gnu failed
+! Due to previous errors, no 2-sysfsutils.log file!
+! (Try enabling xtrace in the config to track an error inside the build syst ..
+  +00:00:03 Aborted building filesystem/sysfsutils
+  Unmounting loop mounts ...
+</code></p>
+
+<p>It remains exciting.</p>
+
+<p>Tags: <a href='tag_vintage computing.html'>vintage computing</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_crosscompiling.html'>crosscompiling</a></p>
+<h3>Ressources</h3>
+
+<ul>
+<li>[^1]: This is Footnote Number One.</li>
+<li>[^2]: T2/Linux is especially for cross compiling.</li>
+<li>[^3]: Download: <a href="https://cdimage.debian.org/cdimage/ports/current/">debian</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<!-- entry end -->
+</div>
+<div><!--<h3>Ihre Meinungen:</h3>-->
+                <section class="post-content">
+                 <script data-isso="https://isso.apfelhammer.de/"
+                      src="https://isso.apfelhammer.de/js/embed.min.js"></script>
+                <section id="isso-thread"></section>
+                </section>
+              </div>
+<hr>
+<div id="footer">CC by-nc-nd <a href="https://herrmontag.de/about">Jan Montag</a> &mdash; <a href="mailto:vintage&#64;thafaker&#46;de">vintage&#64;thafaker&#46;de</a><br/>
+Part of famous thahipster network - <a href="https://thahipster.de">thahipster.de</a></div>
+<a href="https://xn--sr8hvo.ws/previous">←</a>
+An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+<a href="https://xn--sr8hvo.ws/next">→</a>
+<p>HITCOUNTER: You are visitor number <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/apfelhammer" alt="several"></a></p>
+</div></div>
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'), 
+        m=f.getElementsByTagName('script')[0]; 
+        o.async=1; o.src=t; o.id='fathom-script'; 
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//fathom.apfelhammer.de/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'FGODV');
+    fathom('trackPageview');
+    </script>
+    <!-- /Fathom -->
+</body></html>

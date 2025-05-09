@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://apfelhammer.de">
+<!-- Die H-Karte Junge -->
+<div class="h-card" style="display: none;">
+    <a class="u-url" href="https://apfelhammer.de" style="display: none;">Apfelhammer</a>
+    <a class="u-url" href="https://thahipster.de" style="display: none;">thahipster.de</a>
+    <a class="u-url" href="https://herrmontag.de" style="display: none;">HerrMontag.de</a>
+    <p class="p-name">Jan Montag</p>
+    <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
+</div>
+		<!-- all rel mes -->
+			<link rel="me" href="https://thahipster.de" />
+			<link rel="me" href="https://thafaker.crabdance.com" />
+			<link rel="me" href="https://janmontag.de" />
+			<link rel="me" href="https://thafaker.de" />
+			<link rel="me" href="https://herrmontag.de" />
+			<link rel="me" href="https://apfelhammer.de" />
+			<link rel="me" href="https://bsky.app/profile/herrmontag.de" />
+			<link rel="me" href="https://open.spotify.com/user/31pff5mvgaxh2npxksruczaef3li" />
+			<link rel="me" href="https://instagram.com/vinylisation/" />
+			<link rel="me" href="https://www.instagram.com/herr_montag_/" />
+			<link rel="me" href="https://twitter.com/ErfurterDom" />
+     		<link rel="me" href="https://mastodon.art/@herrmontag_de" />
+ 			<link rel="me" href="https://defcon.social/@apfelhammer" />
+			<link rel="me" href="hallo@herrmontag.de" />
+			<link rel="webmention" href="https://webmention.io/apfelhammer.de/webmention" />
+			<link rel="me" href="https://apfelhammer.de">
+			<link rel="pingback" href="https://webmention.io/apfelhammer.de/xmlrpc" />
+			<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+			<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+			<link href="https://github.com/thafaker" rel="me">
+			<link rel="me" href="https://github.com/thafaker" />
+		<!-- all rel mes -->
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
+<!-- Alternative icons for different devices -->
+<link rel="icon" type="image/png" sizes="16x16" href="/Logo/logo_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Logo/logo_32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/Logo/logo_64x64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/Logo/logo_256x256.png">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/Logo/logo_256x256.png">
+<link rel="stylesheet" href="enough.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Fienix Linux for PPC Computers</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
+<div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
+<hr>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<hr>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="fienix-linux-for-ppc-computers.html">
+Fienix Linux for PPC Computers
+</a></h3>
+<!-- bashblog_timestamp: #202501301044.11# -->
+<div class="subtitle">January 30, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>The other day I stumbled across <strong>Fienix Linux</strong>. It is a Distribution maintained by one man,
+<em>Casey Cullen</em>. It is based on debian, but with focus on
+powerpc first. I just tried to install it on my Powermac G5. And it works great!</p>
+
+<p><a href="https://apfelhammer.de/images/fienix.png"><img src="images/fienix_smol.png" alt="Fienix Linux on Powermac G5" title="" /></a>
+<small>Fienix Linux 6.0.1 on my Powermac G5, on real Hardware.</small></p>
+
+<hr>
+
+<p>My Setup in this machine as follows:</p>
+
+<ul>
+<li>Powermac G5 2x2Ghz 11,2</li>
+<li>12 GB Ram</li>
+<li>1 TB NVMe-SSD</li>
+<li>Cinema Display 23"</li>
+<li>Geforce 6600GS</li>
+</ul>
+
+<p>I installed Grub on an internal SSD because Open Firmware is too old to boot from
+NVME directly. So GRUB starts from that internal SSD and boots the Linux Distros
+which resides on the NVMe-SSD. Because the Linux Kernel has the drivers for NVME. 
+There are a lot of different Partitions:</p>
+
+<ul>
+<li>64 GB SWAP Drive :-)</li>
+<li>Debian SID</li>
+<li>T2/Linux</li>
+<li>Adiele Linux</li>
+<li>Fienix Linux</li>
+</ul>
+
+<p>As I can say Fienix Linux is running the best. All other experiences with Linux
+on PowerPC G5 were not so good. There is 3D-Acceleration which makes it really snappy to work
+in a Windows Manager like XFCE. There are modern Browsers like EOLIE (which is
+Safari Webkit) and with it you can access the modern web nearly without problems.
+ You have sealion or arcticfox. All of them are good web browers too. And they all
+work. With Debian SID on PPC64 I was unable to run EOLIE. And via T2 Linux because of another ELF Format,
+I was unable to run a binary from Sealion and selfcompiling did not work because
+of other broken packages. </p>
+
+<p>The only problem I experienced is a lack with the update servers, the apt sources.
+These are special Casey Cullen sources and they were dead as I tried. So there
+is now way to update the pakages or to install new software. I hope there are
+alternative servers / sources or the main ones come back. I asked Casey via
+youtube directly, hopefully he read it.</p>
+
+<p>Keep up the good work, best Linux Distro for PPC64 so far.</p>
+
+<p>Reminder for myself:</p>
+
+<pre><code>username: fienix
+password: fienixPW
+root password: rootAdminPW
+</code></pre>
+
+<p>[<strong>UPDATE</strong>]
+Eolie Webbrowser is even capable to display and render my complex Ghost Weblog
+over there at <a href="http://thahipster.de">thahipster.de</a> and this is the first time
+this happens on a PPC64 Linux. Really great!</p>
+
+<p><img src="images/thahipster_fienix_eolie.png" alt="Fienix Linux on Powermac G5" title="" />
+<small>thahipster.de Ghost CMS Weblog rendered with EOLIE on Fienix Linux</small></p>
+
+<h3>Ressoources</h3>
+
+<ul>
+<li><a href="https://fienixppc.blogspot.com">Fienix Linux Website</a></li>
+<li><a href="https://fienixppc.blogspot.com/p/download.html">Download Version 6.0.1</a></li>
+<li><a href="https://www.powerprogress.org/en/interview/interview-with-casey-cullen-the-creator-of-fienix-a-powerpc-friendly-linux-distribution/">Interview with Casey Cullen</a></li>
+</ul>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_eolie.html'>eolie</a>, <a href='tag_browser.html'>browser</a>, <a href='tag_fienix.html'>fienix</a></p>
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<!-- entry end -->
+</div>
+<div><!--<h3>Ihre Meinungen:</h3>-->
+                <section class="post-content">
+                 <script data-isso="https://isso.apfelhammer.de/"
+                      src="https://isso.apfelhammer.de/js/embed.min.js"></script>
+                <section id="isso-thread"></section>
+                </section>
+              </div>
+<hr>
+<div id="footer">CC by-nc-nd <a href="https://herrmontag.de/about">Jan Montag</a> &mdash; <a href="mailto:vintage&#64;thafaker&#46;de">vintage&#64;thafaker&#46;de</a><br/>
+Part of famous thahipster network - <a href="https://thahipster.de">thahipster.de</a></div>
+<a href="https://xn--sr8hvo.ws/previous">←</a>
+An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+<a href="https://xn--sr8hvo.ws/next">→</a>
+<p>HITCOUNTER: You are visitor number <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/apfelhammer" alt="several"></a></p>
+</div></div>
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'), 
+        m=f.getElementsByTagName('script')[0]; 
+        o.async=1; o.src=t; o.id='fathom-script'; 
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//fathom.apfelhammer.de/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'FGODV');
+    fathom('trackPageview');
+    </script>
+    <!-- /Fathom -->
+</body></html>

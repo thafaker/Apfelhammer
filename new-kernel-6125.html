@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://apfelhammer.de">
+<!-- Die H-Karte Junge -->
+<div class="h-card" style="display: none;">
+    <a class="u-url" href="https://apfelhammer.de" style="display: none;">Apfelhammer</a>
+    <a class="u-url" href="https://thahipster.de" style="display: none;">thahipster.de</a>
+    <a class="u-url" href="https://herrmontag.de" style="display: none;">HerrMontag.de</a>
+    <p class="p-name">Jan Montag</p>
+    <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
+</div>
+		<!-- all rel mes -->
+			<link rel="me" href="https://thahipster.de" />
+			<link rel="me" href="https://thafaker.crabdance.com" />
+			<link rel="me" href="https://janmontag.de" />
+			<link rel="me" href="https://thafaker.de" />
+			<link rel="me" href="https://herrmontag.de" />
+			<link rel="me" href="https://apfelhammer.de" />
+			<link rel="me" href="https://bsky.app/profile/herrmontag.de" />
+			<link rel="me" href="https://open.spotify.com/user/31pff5mvgaxh2npxksruczaef3li" />
+			<link rel="me" href="https://instagram.com/vinylisation/" />
+			<link rel="me" href="https://www.instagram.com/herr_montag_/" />
+			<link rel="me" href="https://twitter.com/ErfurterDom" />
+     		<link rel="me" href="https://mastodon.art/@herrmontag_de" />
+ 			<link rel="me" href="https://defcon.social/@apfelhammer" />
+			<link rel="me" href="hallo@herrmontag.de" />
+			<link rel="webmention" href="https://webmention.io/apfelhammer.de/webmention" />
+			<link rel="me" href="https://apfelhammer.de">
+			<link rel="pingback" href="https://webmention.io/apfelhammer.de/xmlrpc" />
+			<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+			<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+			<link href="https://github.com/thafaker" rel="me">
+			<link rel="me" href="https://github.com/thafaker" />
+		<!-- all rel mes -->
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
+<!-- Alternative icons for different devices -->
+<link rel="icon" type="image/png" sizes="16x16" href="/Logo/logo_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Logo/logo_32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/Logo/logo_64x64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/Logo/logo_256x256.png">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/Logo/logo_256x256.png">
+<link rel="stylesheet" href="enough.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>New Kernel 6.12.5 for my Powermac G5</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
+<div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
+<hr>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<hr>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="new-kernel-6125.html">
+New Kernel 6.12.5 for my Powermac G5
+</a></h3>
+<!-- bashblog_timestamp: #202412161801.56# -->
+<div class="subtitle">December 16, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I plugged in that great <strong>NVMe SSD</strong> into my Powermac G5 because he supports PCI-Express (Version 1.0) and
+there is a 4x Speed Port that is unused (the x16 is for the Graphicscard) and now I ran a 1 TB NVMe-SSD
+in this Powermac and it is doing great. Because due the lack of drivers, Open Firmware is unable to
+boot from thos NVMe-SSDs, he is able to boot from a normal 2,5" SSD on the SATA-Port. So I installed the
+/boot/grub parts to that SSD and therefor it loads the Operating System from the NVMe :-) This is
+working quite well and I run </p>
+
+<ul>
+<li>Debian 12</li>
+<li>T2/SDE Linux</li>
+<li>Adélie Linux</li>
+</ul>
+
+<p>for PowerPC 64 PPC64 plattform. I even write this article on that machine while on Debian 12 doing an
+<code>apt update &amp;&amp; apt upgrade</code>, running SeaLion Firefox and listening to music. Okay, it is not the 
+performance of a late and great 128 Core Threadripper, but it is quite impressive what this machine
+from 2005 is able to do in the end of 2024.</p>
+
+<p><code>powermac:~$ uname -a <br />
+Linux powermac 6.12.5-powerpc64 #1 SMP Debian 6.12.5-1 (2024-12-15) ppc64 GNU/Linux</code></p>
+
+<p>I installed 12 GB-Ram and that NVMe-SSD in the System. It has a 2 GHz PPC970MP Dualcore CPU and
+the original Apple 23" Cinema Display. I like that setup, typing is done via the famous Keycron K2
+Keyboard.</p>
+
+<p>Actually, I have no glue what can I do to get things crosscompiled. Firefox for PowerPC is broken and
+epiphany is running with a white screen, doesnt load on Debian. There is no 
+actual browser for PowerPC, what I really dislike. 
+I now use SeaLion (Version 33.4) and it is surprisingly good, even github loads and a 
+lot of other new websites. It is usable.</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_debian.html'>debian</a>, <a href='tag_powerpc64.html'>powerpc64</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+<h3>Ressources</h3>
+
+<ul>
+<li>Adelie Linux: <a href="https://www.adelielinux.org/">https://www.adelielinux.org/</a></li>
+<li>Fresh Install T2/Linux: <a href="https://t2sde.org/kb/8/?kb/8">https://t2sde.org/kb/8/?kb/8</a></li>
+<li>Debian 12 SID: <a href="https://cdimage.debian.org/cdimage/ports/12.0/ppc64/debian-12.0.0-ppc64-NETINST-1.iso?ref=thahipster.de">https://cdimage.debian.org/cdimage/ports/12.0/ppc64/</a></li>
+<li>Linux on PowerPC Computers: <a href="https://thahipster.de/linux-auf-dem-powermac-g5/">https://thahipster.de/linux-auf-dem-powermac-g5/</a></li>
+<li>SeaLion on Github: <a href="https://github.com/wicknix/SeaLion/releases/tag/33.4.0">https://github.com/wicknix/SeaLion/releases/tag/33.4.0</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<!-- entry end -->
+</div>
+<div><!--<h3>Ihre Meinungen:</h3>-->
+                <section class="post-content">
+                 <script data-isso="https://isso.apfelhammer.de/"
+                      src="https://isso.apfelhammer.de/js/embed.min.js"></script>
+                <section id="isso-thread"></section>
+                </section>
+              </div>
+<hr>
+<div id="footer">CC by-nc-nd <a href="https://herrmontag.de/about">Jan Montag</a> &mdash; <a href="mailto:vintage&#64;thafaker&#46;de">vintage&#64;thafaker&#46;de</a><br/>
+Part of famous thahipster network - <a href="https://thahipster.de">thahipster.de</a></div>
+<a href="https://xn--sr8hvo.ws/previous">←</a>
+An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+<a href="https://xn--sr8hvo.ws/next">→</a>
+<p>HITCOUNTER: You are visitor number <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/apfelhammer" alt="several"></a></p>
+</div></div>
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'), 
+        m=f.getElementsByTagName('script')[0]; 
+        o.async=1; o.src=t; o.id='fathom-script'; 
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//fathom.apfelhammer.de/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'FGODV');
+    fathom('trackPageview');
+    </script>
+    <!-- /Fathom -->
+</body></html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://apfelhammer.de">
+<!-- Die H-Karte Junge -->
+<div class="h-card" style="display: none;">
+    <a class="u-url" href="https://apfelhammer.de" style="display: none;">Apfelhammer</a>
+    <a class="u-url" href="https://thahipster.de" style="display: none;">thahipster.de</a>
+    <a class="u-url" href="https://herrmontag.de" style="display: none;">HerrMontag.de</a>
+    <p class="p-name">Jan Montag</p>
+    <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
+</div>
+		<!-- all rel mes -->
+			<link rel="me" href="https://thahipster.de" />
+			<link rel="me" href="https://thafaker.crabdance.com" />
+			<link rel="me" href="https://janmontag.de" />
+			<link rel="me" href="https://thafaker.de" />
+			<link rel="me" href="https://herrmontag.de" />
+			<link rel="me" href="https://apfelhammer.de" />
+			<link rel="me" href="https://bsky.app/profile/herrmontag.de" />
+			<link rel="me" href="https://open.spotify.com/user/31pff5mvgaxh2npxksruczaef3li" />
+			<link rel="me" href="https://instagram.com/vinylisation/" />
+			<link rel="me" href="https://www.instagram.com/herr_montag_/" />
+			<link rel="me" href="https://twitter.com/ErfurterDom" />
+     		<link rel="me" href="https://mastodon.art/@herrmontag_de" />
+ 			<link rel="me" href="https://defcon.social/@apfelhammer" />
+			<link rel="me" href="hallo@herrmontag.de" />
+			<link rel="webmention" href="https://webmention.io/apfelhammer.de/webmention" />
+			<link rel="me" href="https://apfelhammer.de">
+			<link rel="pingback" href="https://webmention.io/apfelhammer.de/xmlrpc" />
+			<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+			<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+			<link href="https://github.com/thafaker" rel="me">
+			<link rel="me" href="https://github.com/thafaker" />
+		<!-- all rel mes -->
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
+<!-- Alternative icons for different devices -->
+<link rel="icon" type="image/png" sizes="16x16" href="/Logo/logo_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Logo/logo_32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/Logo/logo_64x64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/Logo/logo_256x256.png">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/Logo/logo_256x256.png">
+<link rel="stylesheet" href="enough.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>This Is Apfelhammer! &mdash; Posts tagged "ppc64"</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
+<div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
+<hr>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<hr>
+</div></div></div>
+<div id="divbody"><div class="content">
+<h3><a class="ablack" href="termnavi-terminal-navidrome-client-ppc64.html">
+TermNavi Terminal Navidrome Client ppc64
+</a></h3>
+<!-- bashblog_timestamp: #202505082151.12# -->
+<div class="subtitle">May 08, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>So the other day I tried to connect to my <strong>Navidrome</strong> MP3 Streaming Server, 
+I call it "Spotify at Home", via Webinterface to listen to some music, but
+there were no way to do this. The Webbrowsers available are too old. Sad.</p>
+
+<p>So I decided to programm a really small <em>Navidrome Terminal Client</em> called
+TermNavi (yes I know... need better name) to listen to my MP3. And what shall 
+I say? The first implementation is ready. I tested and successfully compiled
+on aarch64 (my MacMini M4) and the legendary Powermac G5 with ARCH Linux or
+Debian Sid ppc64.</p>
+
+<p><img src="images/termnavi.png" alt="" title="" /></p>
+
+<p>So this it is:</p>
+
+<ul>
+<li>MVP for playback</li>
+<li>Rust for pgramming</li>
+<li>Ratatui für the Terminal UI (TUI)</li>
+<li>a Powermac G5 with PPC Linux</li>
+</ul>
+
+<p>Really happy, it is my first rust project. </p>
+
+<h3>known bugs</h3>
+
+<ul>
+<li>State handling is missing</li>
+<li>UI Rendering for more selections</li>
+<li>scroll logic is worst</li>
+</ul>
+
+<p>And as a now cool hacker guy, I pushed everything in my github repo. But don't
+expect too much, I am a worst programmer, I often do not understand what is 
+going on and I have everything in one file, the main.rs :-)</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TermNavi Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="claws-mail-431-archpower-linux-successfully-compiled.html">
+Claws-Mail 4.3.1 ArchPOWER Linux successfully compiled for PPC64
+</a></h3>
+<!-- bashblog_timestamp: #202504252336.35# -->
+<div class="subtitle">April 25, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>Due to the lack of a <em>good graphical email client</em> [^1] for my Arch POWER Linux 
+Distro (Arch Linux for PowerPC), I tried several things and ended up with <strong>claws-mail</strong>. But it is not
+installable or not existing in the repos of pacman for powerpc. So I dcided
+to compile it by myself.</p>
+
+<p>Claws-Mail 4.3.1 just compiled successfully on my Powermac G5.</p>
+
+<p><img src="/images/claws-mail_start.jpg" alt="" title="" />
+<small>claws-mail first window, first start</small></p>
+
+<p>Claws Mail is an email client (and news reader), based on GTK+, featuring:</p>
+
+<ul>
+<li>Quick response</li>
+<li>Graceful, and sophisticated interface</li>
+<li>Easy configuration, intuitive operation</li>
+<li>Abundant features</li>
+<li>Extensibility</li>
+<li>Robustness and stability</li>
+</ul>
+
+<p><img src="/images/screen_grab_claws.png" alt="" title="" />
+<small>todays screenshot of my inbox on claws-mail on my powermac g5</small></p>
+
+<p>Okay, it is an really not beautiful email client, but it works great and we should
+not forget my ancient hardware from 2005 :-)</p>
+
+<p>[^1]: I think there is no one. Not only one.</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://www.claws-mail.org/releases.php">Latest Claws Mail Releases</a></li>
+</ul>
+
+<p>Tags: <a href='tag_archlinux.html'>archlinux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_email.html'>email</a>, <a href='tag_ppc.html'>ppc</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="release-t2-linux-254-it-only-does-everything.html">
+Release: T2 Linux 25.4 "It Only Does Everything"
+</a></h3>
+<!-- bashblog_timestamp: #202504141557.55# -->
+<div class="subtitle">April 14, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>A lot of crazy things happen right now. A few minutes ago <a href="https://apfelhammer.de/update-to-fienix-linux.html">I reported about the
+living sign of Fienix</a> Linux after the APT Repo down and now I see there is a
+<a href="https://t2sde.org/#news-2025-04-14">new version of latest and greatest T2 Linux</a> (ver. 25.4) from Rene Rebe. </p>
+
+<blockquote>
+  <p>With a total of 17 pre-compiled base install ISOs for various Glibc, Musl and uClibc combinations are available for 12 CPU ISAs: Alpha, ARM(64), HPPA64, IA64, MIPS64, PowerPC(64), RISCV64, SPARC64, i586, x86-64. On most architectures the release still boots with as little as 512MB of RAM or even less, and ISO downloads are less than 2GB for base Wayland desktop with Firefox.</p>
+</blockquote>
+
+<p>T2 runs well on my <em>Powermac G5</em>, as I stated <a href="https://apfelhammer.de/new-release-of-t2linux.html">here</a> for detail.</p>
+
+<h2>Ressources</h2>
+
+<ul>
+<li><a href="https://t2sde.org/#news-2025-04-14">T2/SDE 25.4 announcement</a></li>
+<li><a href="https://t2sde.org/download/25.4">T2 Download Portal for 25.4</a></li>
+<li><a href="https://dl.t2sde.org/binary/2025/t2-25.4-ppc6432-base-wayland-glibc-gcc-power4.iso">T2 Linux for direct download for PPC64/32</a> (64-bit OS kernel, 32-bit user-space)</li>
+<li><a href="https://t2sde.org">T2 Main Website</a></li>
+<li><a href="https://t2sde.org/documentation/buildintro.html">Quick Build in seven-1 easy steps</a></li>
+<li><a href="https://t2sde.org/documentation/kb/8/?documentation/kb/8">Getting started w/ a fresh T2 install</a></li>
+<li><a href="https://medium.com/@Re-News">Rene Rebes Medium Blog</a></li>
+</ul>
+
+<p>Tags: <a href='tag_t2linux.html'>t2linux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="update-to-fienix-linux.html">
+Update to Fienix Linux
+</a></h3>
+<!-- bashblog_timestamp: #202504141531.22# -->
+<div class="subtitle">April 14, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>As I wrote in a <a href="https://apfelhammer.de/fienix-linux-for-ppc-computers.html">few</a> 
+articles before, I am a big fan of <strong>Fienix Linux</strong> because it works 
+absolutely amazing on my Powermac G5, it can even render
+complex and modern Websites like my other Weblog (Ghost CMS) and all the big
+and modern new Websites.</p>
+
+<p>However, as I continued to use Fienix, I found out that I couldn't 
+install any updates or other software packages. After some research, 
+I discovered that the <em>Fienix APT Repo</em> <a href="https://apfelhammer.de/fieneix-linux-seems-to-be-dead.html">was down</a>. I asked at the corresponding
+youtube channel and even at the Website, but there was no answer.</p>
+
+<p>Today, almost by chance, I discovered the official article on the Fienix 
+website. The developer writes:</p>
+
+<blockquote>
+  <p>The Fienix software repository was "unreconciled" due to an unexpected interruption to an update process. Unfortunately, a backup did not exist. Effort to reconcile the repository were unsuccessful. This caused package unavailability, broken packages and broken updates. </p>
+</blockquote>
+
+<p>He can't fix it in Version 6 so he hopes to get it fixed with Version 7, what
+is months ago. His solution as follows:</p>
+
+<blockquote>
+  <p>If you have installed all the packages you want/need, you don't need to do anything. Browser updates are generally posted to the "Linux on PowerPC" Facebook group, Hyperion forums, and elsewhere. You can also get packages from Debian, or switch over to Debian completely.</p>
+</blockquote>
+
+<p>At this point I find it really good that the website, the project and Fienix
+Linux itself is not dead, it's has a broken APT Repo and need to be fixed, but
+the developer is willing to continue. That gives me hope for my Powermac G5.</p>
+
+<p><strong>Keep up the great work</strong></p>
+
+<p>(<a href="https://fienixppc-news.blogspot.com/2025/02/repository-down.html">via</a>)</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_eolie.html'>eolie</a>, <a href='tag_browser.html'>browser</a>, <a href='tag_fienix.html'>fienix</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="fieneix-linux-seems-to-be-dead.html">
+Fienix Linux seems to be dead
+</a></h3>
+<!-- bashblog_timestamp: #202502061155.51# -->
+<div class="subtitle">February 06, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I find it quite sad because I only recently got to know <a href="https://apfelhammer.de/fienix-linux-for-ppc-computers.html">Fienix Linux</a>, 
+even though it has been around for a long time. And I think it's absolutely 
+great because it works better than any other Linux on the Powermac G5 
+that I've tried so far:</p>
+
+<ul>
+<li>Graphics acceleration</li>
+<li>modern web browser</li>
+</ul>
+
+<p>But unfortunately the package sources are dead, this Linux is based on Debian 
+SID and uses APT. The Fienix source server is unreachable and there is no 
+alternative.</p>
+
+<p>I tried to contact the developer, I know that Fienix Linux is a one-man 
+project and therefore there are few resources available, but I haven't 
+received any response.</p>
+
+<p>So it's not really possible to reinstall packages, I also can't install 
+a development environment to compile myself and so it remains nice, but not 
+very expandable and usable.</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_eolie.html'>eolie</a>, <a href='tag_browser.html'>browser</a>, <a href='tag_fienix.html'>fienix</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="fienix-linux-for-ppc-computers.html">
+Fienix Linux for PPC Computers
+</a></h3>
+<!-- bashblog_timestamp: #202501301044.11# -->
+<div class="subtitle">January 30, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>The other day I stumbled across <strong>Fienix Linux</strong>. It is a Distribution maintained by one man,
+<em>Casey Cullen</em>. It is based on debian, but with focus on
+powerpc first. I just tried to install it on my Powermac G5. And it works great!</p>
+
+<p><a href="https://apfelhammer.de/images/fienix.png"><img src="images/fienix_smol.png" alt="Fienix Linux on Powermac G5" title="" /></a>
+<small>Fienix Linux 6.0.1 on my Powermac G5, on real Hardware.</small></p>
+
+<p class="readmore"><a href="fienix-linux-for-ppc-computers.html">Read more...</a></p>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="firefox-128-esr-on-ppc64-powermac-g5.html">
+Firefox 128-ESR on PPC64 Powermac G5
+</a></h3>
+<!-- bashblog_timestamp: #202412291744.01# -->
+<div class="subtitle">December 29, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>Since I own the Powermac G5 and play around with it, I want to install a modern
+Browser and therefor, I want to run Firefox on it. But it is not possible. I tried
+different Linux Distros like Debian 12 PPC64, T2/Linux by Rene Rebe and even
+some special builts of ARCH for PPC64 - but I had no luck. No one had luck and 
+even the Debian Mailinglist said it is not possible to built Firefox for PPC64
+at this time. I even wrote about that.</p>
+
+<p>And now, the other day, I tried <a href="https://www.adelielinux.org/download/">Adelie Linux PPC64</a> and et voila: I fucking could
+start Firefox and tested some Websites like youtube.com and it worked. So I made
+a screenshot because I could not believe myself. I totally hope I can use 
+Firefox sooner than later on the other Distros too.</p>
+
+<p><a href="/images/ff128_ppc64.jpg"><img src="/images/ff128_ppc64.jpg" alt="Firefox 128 ESR on PPC64 Linux" title="" /></a>
+<small>Firefox 128 ESR running on top of LXQT Adelie Linux Powerpc 64 Powermac G5</small></p>
+
+<p>Sincerely,
+Jan</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_firefox.html'>firefox</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_linux.html'>linux</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="new-kernel-6125.html">
+New Kernel 6.12.5 for my Powermac G5
+</a></h3>
+<!-- bashblog_timestamp: #202412161801.56# -->
+<div class="subtitle">December 16, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I plugged in that great <strong>NVMe SSD</strong> into my Powermac G5 because he supports PCI-Express (Version 1.0) and
+there is a 4x Speed Port that is unused (the x16 is for the Graphicscard) and now I ran a 1 TB NVMe-SSD
+in this Powermac and it is doing great. Because due the lack of drivers, Open Firmware is unable to
+boot from thos NVMe-SSDs, he is able to boot from a normal 2,5" SSD on the SATA-Port. So I installed the
+/boot/grub parts to that SSD and therefor it loads the Operating System from the NVMe :-) This is
+working quite well and I run </p>
+
+<ul>
+<li>Debian 12</li>
+<li>T2/SDE Linux</li>
+<li>Adélie Linux</li>
+</ul>
+
+<p>for PowerPC 64 PPC64 plattform. I even write this article on that machine while on Debian 12 doing an
+<code>apt update &amp;&amp; apt upgrade</code>, running SeaLion Firefox and listening to music. Okay, it is not the 
+performance of a late and great 128 Core Threadripper, but it is quite impressive what this machine
+from 2005 is able to do in the end of 2024.</p>
+
+<p><code>powermac:~$ uname -a <br />
+Linux powermac 6.12.5-powerpc64 #1 SMP Debian 6.12.5-1 (2024-12-15) ppc64 GNU/Linux</code></p>
+
+<p>I installed 12 GB-Ram and that NVMe-SSD in the System. It has a 2 GHz PPC970MP Dualcore CPU and
+the original Apple 23" Cinema Display. I like that setup, typing is done via the famous Keycron K2
+Keyboard.</p>
+
+<p>Actually, I have no glue what can I do to get things crosscompiled. Firefox for PowerPC is broken and
+epiphany is running with a white screen, doesnt load on Debian. There is no 
+actual browser for PowerPC, what I really dislike. 
+I now use SeaLion (Version 33.4) and it is surprisingly good, even github loads and a 
+lot of other new websites. It is usable.</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_debian.html'>debian</a>, <a href='tag_powerpc64.html'>powerpc64</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+<h3>Ressources</h3>
+
+<ul>
+<li>Adelie Linux: <a href="https://www.adelielinux.org/">https://www.adelielinux.org/</a></li>
+<li>Fresh Install T2/Linux: <a href="https://t2sde.org/kb/8/?kb/8">https://t2sde.org/kb/8/?kb/8</a></li>
+<li>Debian 12 SID: <a href="https://cdimage.debian.org/cdimage/ports/12.0/ppc64/debian-12.0.0-ppc64-NETINST-1.iso?ref=thahipster.de">https://cdimage.debian.org/cdimage/ports/12.0/ppc64/</a></li>
+<li>Linux on PowerPC Computers: <a href="https://thahipster.de/linux-auf-dem-powermac-g5/">https://thahipster.de/linux-auf-dem-powermac-g5/</a></li>
+<li>SeaLion on Github: <a href="https://github.com/wicknix/SeaLion/releases/tag/33.4.0">https://github.com/wicknix/SeaLion/releases/tag/33.4.0</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+</div>
+<hr>
+<div id="footer">CC by-nc-nd <a href="https://herrmontag.de/about">Jan Montag</a> &mdash; <a href="mailto:vintage&#64;thafaker&#46;de">vintage&#64;thafaker&#46;de</a><br/>
+Part of famous thahipster network - <a href="https://thahipster.de">thahipster.de</a></div>
+<a href="https://xn--sr8hvo.ws/previous">←</a>
+An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+<a href="https://xn--sr8hvo.ws/next">→</a>
+<p>HITCOUNTER: You are visitor number <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/apfelhammer" alt="several"></a></p>
+</div></div>
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'), 
+        m=f.getElementsByTagName('script')[0]; 
+        o.async=1; o.src=t; o.id='fathom-script'; 
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//fathom.apfelhammer.de/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'FGODV');
+    fathom('trackPageview');
+    </script>
+    <!-- /Fathom -->
+</body></html>

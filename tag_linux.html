@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://apfelhammer.de">
+<!-- Die H-Karte Junge -->
+<div class="h-card" style="display: none;">
+    <a class="u-url" href="https://apfelhammer.de" style="display: none;">Apfelhammer</a>
+    <a class="u-url" href="https://thahipster.de" style="display: none;">thahipster.de</a>
+    <a class="u-url" href="https://herrmontag.de" style="display: none;">HerrMontag.de</a>
+    <p class="p-name">Jan Montag</p>
+    <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
+</div>
+		<!-- all rel mes -->
+			<link rel="me" href="https://thahipster.de" />
+			<link rel="me" href="https://thafaker.crabdance.com" />
+			<link rel="me" href="https://janmontag.de" />
+			<link rel="me" href="https://thafaker.de" />
+			<link rel="me" href="https://herrmontag.de" />
+			<link rel="me" href="https://apfelhammer.de" />
+			<link rel="me" href="https://bsky.app/profile/herrmontag.de" />
+			<link rel="me" href="https://open.spotify.com/user/31pff5mvgaxh2npxksruczaef3li" />
+			<link rel="me" href="https://instagram.com/vinylisation/" />
+			<link rel="me" href="https://www.instagram.com/herr_montag_/" />
+			<link rel="me" href="https://twitter.com/ErfurterDom" />
+     		<link rel="me" href="https://mastodon.art/@herrmontag_de" />
+ 			<link rel="me" href="https://defcon.social/@apfelhammer" />
+			<link rel="me" href="hallo@herrmontag.de" />
+			<link rel="webmention" href="https://webmention.io/apfelhammer.de/webmention" />
+			<link rel="me" href="https://apfelhammer.de">
+			<link rel="pingback" href="https://webmention.io/apfelhammer.de/xmlrpc" />
+			<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+			<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+			<link href="https://github.com/thafaker" rel="me">
+			<link rel="me" href="https://github.com/thafaker" />
+		<!-- all rel mes -->
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
+<!-- Alternative icons for different devices -->
+<link rel="icon" type="image/png" sizes="16x16" href="/Logo/logo_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Logo/logo_32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/Logo/logo_64x64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/Logo/logo_256x256.png">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/Logo/logo_256x256.png">
+<link rel="stylesheet" href="enough.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>This Is Apfelhammer! &mdash; Posts tagged "linux"</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
+<div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
+<hr>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<hr>
+</div></div></div>
+<div id="divbody"><div class="content">
+<h3><a class="ablack" href="termnavi-terminal-navidrome-client-ppc64.html">
+TermNavi Terminal Navidrome Client ppc64
+</a></h3>
+<!-- bashblog_timestamp: #202505082151.12# -->
+<div class="subtitle">May 08, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>So the other day I tried to connect to my <strong>Navidrome</strong> MP3 Streaming Server, 
+I call it "Spotify at Home", via Webinterface to listen to some music, but
+there were no way to do this. The Webbrowsers available are too old. Sad.</p>
+
+<p>So I decided to programm a really small <em>Navidrome Terminal Client</em> called
+TermNavi (yes I know... need better name) to listen to my MP3. And what shall 
+I say? The first implementation is ready. I tested and successfully compiled
+on aarch64 (my MacMini M4) and the legendary Powermac G5 with ARCH Linux or
+Debian Sid ppc64.</p>
+
+<p><img src="images/termnavi.png" alt="" title="" /></p>
+
+<p>So this it is:</p>
+
+<ul>
+<li>MVP for playback</li>
+<li>Rust for pgramming</li>
+<li>Ratatui für the Terminal UI (TUI)</li>
+<li>a Powermac G5 with PPC Linux</li>
+</ul>
+
+<p>Really happy, it is my first rust project. </p>
+
+<h3>known bugs</h3>
+
+<ul>
+<li>State handling is missing</li>
+<li>UI Rendering for more selections</li>
+<li>scroll logic is worst</li>
+</ul>
+
+<p>And as a now cool hacker guy, I pushed everything in my github repo. But don't
+expect too much, I am a worst programmer, I often do not understand what is 
+going on and I have everything in one file, the main.rs :-)</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TermNavi Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="hello-archpower-linux-for-ppc64.html">
+Hello ArchPOWER Linux for PPC64
+</a></h3>
+<!-- bashblog_timestamp: #202504251450.13# -->
+<div class="subtitle">April 25, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>In a nice <a href="https://apfelhammer.de/hello-t2linux-2504---i-switched-back-to-1224.html#isso-20">comment from Matias</a>, he told me he is using ArchPOWER Linux, an unofficial
+Build of Arch Linux for PowerPC, PPC64, PPC and PPCle for the Power8 Architecture
+etc. pp.; If I remember correctly, I stumbled across this Linux Distro while I
+researched for the best Linux for my Powermac G5, but maybe because I was at
+the beginning of my Linux journey on these machines, I found it to heavy or 
+something else told me not to try. I don't know but it is not important anymore,
+because I installed ArchPOWER Linux current on my NVMe-SSD in the Powermac, 
+multi-booting with T2 Linux, Debian 12 SID, Adelie Linux and Fienix Linux. :-)</p>
+
+<p><img src="/images/fastfetch_arch.png" alt="" title="" /></p>
+
+<p class="readmore"><a href="hello-archpower-linux-for-ppc64.html">Read more...</a></p>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="how-do-i-run-update-grub-from-another-partition-or-a-livecd.html">
+How do I run update-grub from another Partition or a LiveCD?
+</a></h3>
+<!-- bashblog_timestamp: #202504171756.13# -->
+<div class="subtitle">April 17, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>As you know my Setup, I will shortly explain again. In my Powermac G5 there is 
+an SATA-SSD as a replacement for the old spinning Apple HDD. On this SSD I 
+installed Mac OX 10.5 and also Debian SID for PPC, to get the Partition-Scheme
+and GRUB installed.</p>
+
+<p>I also built in a NVMe-SSD with 1 TB because the Powermac11,2 has PCI-Express
+Slots like it is standard nowadays. The OpenFirmware in the Powermac doesn't 
+know what an NVMe-SSD is and therefore can't recognize it or boot it. Also 
+Mac OS X 10.5 doesn't <em>see</em> the device. The technic is too young and there are
+no drivers, that is the reason for that.</p>
+
+<p>But lucklily, Linux has the drivers for that. And that's the reason for my Setup.
+Boot Grub from SSD because that can the Powermac. Than load the things you need
+for NVMe and boot the linux off the NVMe-SSD.</p>
+
+<p>I have 4 Linux on that NVMe-SSD and that works great. But it is a problem to 
+update the Grub Bootloader everytime there is a new kernerl or something other
+changed. Long story short, here I will tell (me) you, how to update grub via chroot.</p>
+
+<p class="readmore"><a href="how-do-i-run-update-grub-from-another-partition-or-a-livecd.html">Read more...</a></p>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="release-t2-linux-254-it-only-does-everything.html">
+Release: T2 Linux 25.4 "It Only Does Everything"
+</a></h3>
+<!-- bashblog_timestamp: #202504141557.55# -->
+<div class="subtitle">April 14, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>A lot of crazy things happen right now. A few minutes ago <a href="https://apfelhammer.de/update-to-fienix-linux.html">I reported about the
+living sign of Fienix</a> Linux after the APT Repo down and now I see there is a
+<a href="https://t2sde.org/#news-2025-04-14">new version of latest and greatest T2 Linux</a> (ver. 25.4) from Rene Rebe. </p>
+
+<blockquote>
+  <p>With a total of 17 pre-compiled base install ISOs for various Glibc, Musl and uClibc combinations are available for 12 CPU ISAs: Alpha, ARM(64), HPPA64, IA64, MIPS64, PowerPC(64), RISCV64, SPARC64, i586, x86-64. On most architectures the release still boots with as little as 512MB of RAM or even less, and ISO downloads are less than 2GB for base Wayland desktop with Firefox.</p>
+</blockquote>
+
+<p>T2 runs well on my <em>Powermac G5</em>, as I stated <a href="https://apfelhammer.de/new-release-of-t2linux.html">here</a> for detail.</p>
+
+<h2>Ressources</h2>
+
+<ul>
+<li><a href="https://t2sde.org/#news-2025-04-14">T2/SDE 25.4 announcement</a></li>
+<li><a href="https://t2sde.org/download/25.4">T2 Download Portal for 25.4</a></li>
+<li><a href="https://dl.t2sde.org/binary/2025/t2-25.4-ppc6432-base-wayland-glibc-gcc-power4.iso">T2 Linux for direct download for PPC64/32</a> (64-bit OS kernel, 32-bit user-space)</li>
+<li><a href="https://t2sde.org">T2 Main Website</a></li>
+<li><a href="https://t2sde.org/documentation/buildintro.html">Quick Build in seven-1 easy steps</a></li>
+<li><a href="https://t2sde.org/documentation/kb/8/?documentation/kb/8">Getting started w/ a fresh T2 install</a></li>
+<li><a href="https://medium.com/@Re-News">Rene Rebes Medium Blog</a></li>
+</ul>
+
+<p>Tags: <a href='tag_t2linux.html'>t2linux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="update-to-fienix-linux.html">
+Update to Fienix Linux
+</a></h3>
+<!-- bashblog_timestamp: #202504141531.22# -->
+<div class="subtitle">April 14, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>As I wrote in a <a href="https://apfelhammer.de/fienix-linux-for-ppc-computers.html">few</a> 
+articles before, I am a big fan of <strong>Fienix Linux</strong> because it works 
+absolutely amazing on my Powermac G5, it can even render
+complex and modern Websites like my other Weblog (Ghost CMS) and all the big
+and modern new Websites.</p>
+
+<p>However, as I continued to use Fienix, I found out that I couldn't 
+install any updates or other software packages. After some research, 
+I discovered that the <em>Fienix APT Repo</em> <a href="https://apfelhammer.de/fieneix-linux-seems-to-be-dead.html">was down</a>. I asked at the corresponding
+youtube channel and even at the Website, but there was no answer.</p>
+
+<p>Today, almost by chance, I discovered the official article on the Fienix 
+website. The developer writes:</p>
+
+<blockquote>
+  <p>The Fienix software repository was "unreconciled" due to an unexpected interruption to an update process. Unfortunately, a backup did not exist. Effort to reconcile the repository were unsuccessful. This caused package unavailability, broken packages and broken updates. </p>
+</blockquote>
+
+<p>He can't fix it in Version 6 so he hopes to get it fixed with Version 7, what
+is months ago. His solution as follows:</p>
+
+<blockquote>
+  <p>If you have installed all the packages you want/need, you don't need to do anything. Browser updates are generally posted to the "Linux on PowerPC" Facebook group, Hyperion forums, and elsewhere. You can also get packages from Debian, or switch over to Debian completely.</p>
+</blockquote>
+
+<p>At this point I find it really good that the website, the project and Fienix
+Linux itself is not dead, it's has a broken APT Repo and need to be fixed, but
+the developer is willing to continue. That gives me hope for my Powermac G5.</p>
+
+<p><strong>Keep up the great work</strong></p>
+
+<p>(<a href="https://fienixppc-news.blogspot.com/2025/02/repository-down.html">via</a>)</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_eolie.html'>eolie</a>, <a href='tag_browser.html'>browser</a>, <a href='tag_fienix.html'>fienix</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="backslash-german-imac-keyboard-and-openfirmware.html">
+Backslash, German iMac Keyboard and OpenFirmware
+</a></h3>
+<!-- bashblog_timestamp: #202502240946.23# -->
+<div class="subtitle">February 24, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I had problems typing the backslash "\" and bar "|" on my iMac
+keyboard when in the OpenFirmware user interface.</p>
+
+<p><a href="/images/imac_g3_ppc.jpg"><img src="/images/imac_g3_ppc.jpg" alt="iMac G3" title="" /></a>
+<small>A picture of my iMac G3 while in Open Firmware</small></p>
+
+<p class="readmore"><a href="backslash-german-imac-keyboard-and-openfirmware.html">Read more...</a></p>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="fieneix-linux-seems-to-be-dead.html">
+Fienix Linux seems to be dead
+</a></h3>
+<!-- bashblog_timestamp: #202502061155.51# -->
+<div class="subtitle">February 06, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I find it quite sad because I only recently got to know <a href="https://apfelhammer.de/fienix-linux-for-ppc-computers.html">Fienix Linux</a>, 
+even though it has been around for a long time. And I think it's absolutely 
+great because it works better than any other Linux on the Powermac G5 
+that I've tried so far:</p>
+
+<ul>
+<li>Graphics acceleration</li>
+<li>modern web browser</li>
+</ul>
+
+<p>But unfortunately the package sources are dead, this Linux is based on Debian 
+SID and uses APT. The Fienix source server is unreachable and there is no 
+alternative.</p>
+
+<p>I tried to contact the developer, I know that Fienix Linux is a one-man 
+project and therefore there are few resources available, but I haven't 
+received any response.</p>
+
+<p>So it's not really possible to reinstall packages, I also can't install 
+a development environment to compile myself and so it remains nice, but not 
+very expandable and usable.</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_eolie.html'>eolie</a>, <a href='tag_browser.html'>browser</a>, <a href='tag_fienix.html'>fienix</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="fienix-linux-for-ppc-computers.html">
+Fienix Linux for PPC Computers
+</a></h3>
+<!-- bashblog_timestamp: #202501301044.11# -->
+<div class="subtitle">January 30, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>The other day I stumbled across <strong>Fienix Linux</strong>. It is a Distribution maintained by one man,
+<em>Casey Cullen</em>. It is based on debian, but with focus on
+powerpc first. I just tried to install it on my Powermac G5. And it works great!</p>
+
+<p><a href="https://apfelhammer.de/images/fienix.png"><img src="images/fienix_smol.png" alt="Fienix Linux on Powermac G5" title="" /></a>
+<small>Fienix Linux 6.0.1 on my Powermac G5, on real Hardware.</small></p>
+
+<p class="readmore"><a href="fienix-linux-for-ppc-computers.html">Read more...</a></p>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="how-to-boot-powermac-from-usb.html">
+How To Boot Powermac from USB
+</a></h3>
+<!-- bashblog_timestamp: #202501151651.03# -->
+<div class="subtitle">January 15, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>There are many different mentions in the web. Some say it is impossible to boot
+Powermacs from USB, others says: only PowermacG5 from 7,3 Revision are able to
+boot from USB and the third party says: every Powermac is bootable.</p>
+
+<p>And because I own this late and great Powermac G5 11,2 and I don't want to 
+always burn a CD/DVD everytime I try a new Linux or something else out, I 
+invesitagted a little bit further: the third statement is correct: <em>every Powermac
+can boot from USB.</em></p>
+
+<p><strong>But</strong> it is not so easy like we knew it from Intel/x86 Machines. Press a button
+and it boots. Because this is
+a Powermac with a <em>PowerPC CPU</em> and therefore it uses Open Firmware as an BIOS
+alternative. Open Firmware was far ahead of it's time with great features, but
+it is a cryptical terminal. :-) So far - so good.</p>
+
+<p class="readmore"><a href="how-to-boot-powermac-from-usb.html">Read more...</a></p>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="firefox-128-esr-on-ppc64-powermac-g5.html">
+Firefox 128-ESR on PPC64 Powermac G5
+</a></h3>
+<!-- bashblog_timestamp: #202412291744.01# -->
+<div class="subtitle">December 29, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>Since I own the Powermac G5 and play around with it, I want to install a modern
+Browser and therefor, I want to run Firefox on it. But it is not possible. I tried
+different Linux Distros like Debian 12 PPC64, T2/Linux by Rene Rebe and even
+some special builts of ARCH for PPC64 - but I had no luck. No one had luck and 
+even the Debian Mailinglist said it is not possible to built Firefox for PPC64
+at this time. I even wrote about that.</p>
+
+<p>And now, the other day, I tried <a href="https://www.adelielinux.org/download/">Adelie Linux PPC64</a> and et voila: I fucking could
+start Firefox and tested some Websites like youtube.com and it worked. So I made
+a screenshot because I could not believe myself. I totally hope I can use 
+Firefox sooner than later on the other Distros too.</p>
+
+<p><a href="/images/ff128_ppc64.jpg"><img src="/images/ff128_ppc64.jpg" alt="Firefox 128 ESR on PPC64 Linux" title="" /></a>
+<small>Firefox 128 ESR running on top of LXQT Adelie Linux Powerpc 64 Powermac G5</small></p>
+
+<p>Sincerely,
+Jan</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_firefox.html'>firefox</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_linux.html'>linux</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="status-of-firefox-on-ppc64-big-endian.html">
+Status of Firefox on PPC64 Big Endian
+</a></h3>
+<!-- bashblog_timestamp: #202412200834.25# -->
+<div class="subtitle">December 20, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>So yesterday was the release ouf <strong>24.12 T2/Linux</strong> and the maintainer, creator
+and mastermind behind, René Rebe, were at a lifestream on youtube and twitch.
+So I played around with T2 on my Powermac G5 and listened to the stream and 
+had a small chat with him. The most important part is an actual browser on 
+that machine so I asked for the actual status of firefox.</p>
+
+<p>René replied that the problems with big endian still exist and  occours so there is no
+Firefox for Big Endian Machines at the moment. Firefox builts well on all little endian
+processors, but not on the big ones. There is no better answer at this time,
+but I hope he can do something when he have the time. Because to make that
+clear: there is not a big audience who is working on big endian ppc64 processors 
+like my 970MP is in the world and I believe he get's not enough feedback and 
+attention for his work for the open source community. But this is another part.</p>
+
+<p>Debian also faces the problem of <a href="https://buildd.debian.org/status/package.php?p=firefox&amp;suite=sid">not building firefox for ppc/64</a>, but they have
+other important things to do than to fix that. </p>
+
+<p>I know there were patches from oracle for big endian firefox but I cant find 
+the repository anymore. Maybe these patches and the Void Patches could do some
+important thing? [<strong>UPDATE</strong>] I found the <a href="https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox/patches">patches for firefox</a>.</p>
+
+<p>I bet biggest problem are the people at firefox who doesnt care about big endian
+firefox builts for ppc64 because it is not important.</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="/new-release-of-t2linux.html">New Release Of T2/Linux</a></li>
+<li><a href="https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox/patches">Oracle Patches for Firefox</a></li>
+<li><a href="https://github.com/void-ppc/void-packages-ppc750/tree/master/srcpkgs/firefox/patches">PPC 750 Void Linux Firefox Patches</a></li>
+<li><a href="https://github.com/void-ppc/void-packages-ppc750/blob/master/srcpkgs/firefox/patches/big-endian-image-decoders.patch">void-packages-ppc750/srcpkgs/firefox/patches/big-endian-image-decoders.patch</a></li>
+<li><a href="https://buildd.debian.org/status/package.php?p=firefox&amp;suite=sid">Debian Build Status Firefox</a></li>
+</ul>
+
+<p>Tags: <a href='tag_t2linux.html'>t2linux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_firefox.html'>firefox</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="isso-comments-with-bashblog.html">
+ISSO Comments with Bashblog
+</a></h3>
+<!-- bashblog_timestamp: #202412191403.03# -->
+<div class="subtitle">December 19, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>Comments belongs to the website. So I newly established this weblog and I am a great fan of comments. 
+Because were is the place to talk about a topic? Directly under the topic, 
+right. I now publish with a simple Shell-Script (Bashblog) and there is
+no commenting system built in, the author helped out with integrating
+Disqus, which is known for being a wideley used commenting hoster. </p>
+
+<p>And there is the point to talk: I think comments belong to the commenters
+and to the website were the comments are said, but definitely comments are 
+no big data and therefore should not be outsourced to a third-party company 
+like disqus is.</p>
+
+<p>And here is the point were <a href="https://isso-comments.de/">isso</a> enters the game. 
+Isso is a commenting server similar to Disqus, but were you host your own
+data at yourself, on your own server, here at apfelhammer.de</p>
+
+<p>And now I integrated it into my bashblog.</p>
+
+<p>And it is up and running now. </p>
+
+<p>So please feel free to comment:</p>
+
+<ul>
+<li>no name needed</li>
+<li>no email needed</li>
+<li>just your input</li>
+</ul>
+
+<p>But because of this, everytime someone is commenting, I'll get an email and have
+to moderate the comment. So when you comment, it could take a while, that's
+because I am lazy sometimes :-)</p>
+
+<p>Thank you,
+Jan</p>
+
+<p class="readmore"><a href="isso-comments-with-bashblog.html">Read more...</a></p>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="new-release-of-t2linux.html">
+New Release Of T2/Linux
+</a></h3>
+<!-- bashblog_timestamp: #202412190959.51# -->
+<div class="subtitle">December 19, 2024 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p><img src="images/t2_xfce.jpg" alt="T2/Linux 24.12 with XFCE Desktop on Powermac G5" title="" />
+<small>T2/Linux 24.12 with XFCE Desktop on Powermac G5</small></p>
+
+<p>As you know, this weblog is about my 2005 <a href="https://apfelhammer.de/tag_powermacg5.html">Powermac G5</a> and how to use it in 2024
+soon 2025 as a normal computing device. I installed different Linux Distros
+on an 1 TB NVMe Device while computing with 12 GB-Ram. </p>
+
+<p>And today reached me the information that famous <em>René Rebe</em> did released 
+<strong>T2/Linux 12.2024</strong> [1]. They are pleased to announce T2 24.12 as a major update 
+with a total of 37 pre-compiled base install ISOs for various Glibc, Musl 
+and uClibc combinations are available for 25 CPU ISAs: 
+<p class="readmore"><a href="new-release-of-t2linux.html">Read more...</a></p>
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+</div>
+<hr>
+<div id="footer">CC by-nc-nd <a href="https://herrmontag.de/about">Jan Montag</a> &mdash; <a href="mailto:vintage&#64;thafaker&#46;de">vintage&#64;thafaker&#46;de</a><br/>
+Part of famous thahipster network - <a href="https://thahipster.de">thahipster.de</a></div>
+<a href="https://xn--sr8hvo.ws/previous">←</a>
+An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+<a href="https://xn--sr8hvo.ws/next">→</a>
+<p>HITCOUNTER: You are visitor number <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/apfelhammer" alt="several"></a></p>
+</div></div>
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'), 
+        m=f.getElementsByTagName('script')[0]; 
+        o.async=1; o.src=t; o.id='fathom-script'; 
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//fathom.apfelhammer.de/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'FGODV');
+    fathom('trackPageview');
+    </script>
+    <!-- /Fathom -->
+</body></html>

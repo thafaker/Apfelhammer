@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://apfelhammer.de">
+<!-- Die H-Karte Junge -->
+<div class="h-card" style="display: none;">
+    <a class="u-url" href="https://apfelhammer.de" style="display: none;">Apfelhammer</a>
+    <a class="u-url" href="https://thahipster.de" style="display: none;">thahipster.de</a>
+    <a class="u-url" href="https://herrmontag.de" style="display: none;">HerrMontag.de</a>
+    <p class="p-name">Jan Montag</p>
+    <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
+</div>
+		<!-- all rel mes -->
+			<link rel="me" href="https://thahipster.de" />
+			<link rel="me" href="https://thafaker.crabdance.com" />
+			<link rel="me" href="https://janmontag.de" />
+			<link rel="me" href="https://thafaker.de" />
+			<link rel="me" href="https://herrmontag.de" />
+			<link rel="me" href="https://apfelhammer.de" />
+			<link rel="me" href="https://bsky.app/profile/herrmontag.de" />
+			<link rel="me" href="https://open.spotify.com/user/31pff5mvgaxh2npxksruczaef3li" />
+			<link rel="me" href="https://instagram.com/vinylisation/" />
+			<link rel="me" href="https://www.instagram.com/herr_montag_/" />
+			<link rel="me" href="https://twitter.com/ErfurterDom" />
+     		<link rel="me" href="https://mastodon.art/@herrmontag_de" />
+ 			<link rel="me" href="https://defcon.social/@apfelhammer" />
+			<link rel="me" href="hallo@herrmontag.de" />
+			<link rel="webmention" href="https://webmention.io/apfelhammer.de/webmention" />
+			<link rel="me" href="https://apfelhammer.de">
+			<link rel="pingback" href="https://webmention.io/apfelhammer.de/xmlrpc" />
+			<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+			<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+			<link href="https://github.com/thafaker" rel="me">
+			<link rel="me" href="https://github.com/thafaker" />
+		<!-- all rel mes -->
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/Logo/favicon.ico">
+<!-- Alternative icons for different devices -->
+<link rel="icon" type="image/png" sizes="16x16" href="/Logo/logo_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Logo/logo_32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/Logo/logo_64x64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="icon" type="image/png" sizes="256x256" href="/Logo/logo_256x256.png">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="128x128" href="/Logo/logo_128x128.png">
+<link rel="apple-touch-icon" sizes="256x256" href="/Logo/logo_256x256.png">
+<link rel="stylesheet" href="enough.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Hello T2/Linux 25.04 - I switched back to 12.24</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
+<div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
+<hr>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<hr>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="hello-t2linux-2504---i-switched-back-to-1224.html">
+Hello T2/Linux 25.04 - I switched back to 12.24
+</a></h3>
+<!-- bashblog_timestamp: #202504211927.49# -->
+<div class="subtitle">April 21, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p><strong>Man</strong>, I am a little bit frustrated right now. Everytime a new release of 
+<a href="https://apfelhammer.de/release-t2-linux-254-it-only-does-everything.html">T2/Linux</a>
+is going online, I am really happy to try it out on my <em>Powermac G5</em>. I download
+it and <code>dd</code> it to a USB Stick (<a href="https://apfelhammer.de/how-to-boot-powermac-from-usb.html">here</a> 
+I explain how to boot a PPC Mac from USB) and than boot the Powermac via OpenFirmware
+from that USB Stick and everything works like charme. Like I exspect it.</p>
+
+<p>The Install Process is straight forward and easy, thanks to <em>STONE</em>, the Installer
+of T2. But with Version 25.04 there is a problem, the FANs turn to MAX rotation like
+there is a kernel module not loaded or something like that and you think the G5 
+will soon fly away. The next thing: X seems to be broken, I can't <code>startx</code> 
+anymore. </p>
+
+<p>In <strong>24.12</strong> these things were okay, X works and even 3D-Acceleration works 
+so I could use it in a quite usual way. But now - <em>all of this is gone</em>. 
+Everytime I try, there is another problem. Something other broken. 
+And I am not smart enough to fix it. I do not understand enough and there is
+not enough documentation to get this done. Sure, René is a One-Man-Show with his
+T2 Linux Project and he is fixing a lot of older drivers and software packages
+and he earns nothing and I say thank you man. Great Job. But even in his 
+documentation, I am unable to find the right solution e.g. to crosscompile not the 
+whole target, just a package and all of it's depencies.</p>
+
+<p>I never got <em>Palemoon</em> or <em>ArcticFox</em> compiled or crosscompiled, because there
+are errors I canot solve. I installed <strong>T2/ARM64</strong> on my <em>Mac Mini M4</em> because this
+small machine is really powerful so it is a great crosscompoling solution for
+the me at home for my PPC64 Powermac. 
+But it starts while compiling gcc. I am unable to compile GCC. And 
+without GCC there is no way to compile anything further.</p>
+
+<hr />
+
+<h3>How to crosscompile T2 Linux for PPC64</h3>
+
+<p>Maybe someone can eplain the best way to crosscompile from ARM64 to
+PPC64 is, with two T2 Installs so it is nearly identical. I think it sould be
+possible and meant to be that way. It would be great.</p>
+
+<p><img src="/images/errors.jpeg" alt="My Powermac G5 with T2 Linux and Cinema HD 23&quot; Display" title="" />
+<small>My Powermac G5 with T2 Linux and Cinema HD 23" Display</small></p>
+
+<p>And Fienix Linux is <a href="https://apfelhammer.de/tag_fienix.html">completely broken</a> :-(</p>
+
+<p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_t2linux.html'>t2linux</a></p>
+
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<!-- entry end -->
+</div>
+<div><!--<h3>Ihre Meinungen:</h3>-->
+                <section class="post-content">
+                 <script data-isso="https://isso.apfelhammer.de/"
+                      src="https://isso.apfelhammer.de/js/embed.min.js"></script>
+                <section id="isso-thread"></section>
+                </section>
+              </div>
+<hr>
+<div id="footer">CC by-nc-nd <a href="https://herrmontag.de/about">Jan Montag</a> &mdash; <a href="mailto:vintage&#64;thafaker&#46;de">vintage&#64;thafaker&#46;de</a><br/>
+Part of famous thahipster network - <a href="https://thahipster.de">thahipster.de</a></div>
+<a href="https://xn--sr8hvo.ws/previous">←</a>
+An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+<a href="https://xn--sr8hvo.ws/next">→</a>
+<p>HITCOUNTER: You are visitor number <a href="http://stuff.mit.edu/doc/counter-howto.html"><img src="http://stuff.mit.edu/cgi/counter/apfelhammer" alt="several"></a></p>
+</div></div>
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'), 
+        m=f.getElementsByTagName('script')[0]; 
+        o.async=1; o.src=t; o.id='fathom-script'; 
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//fathom.apfelhammer.de/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'FGODV');
+    fathom('trackPageview');
+    </script>
+    <!-- /Fathom -->
+</body></html>
