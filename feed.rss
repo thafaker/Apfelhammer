@@ -2,9 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>This Is Apfelhammer!</title><link>https://apfelhammer.de/index.html</link>
 <description>a blog about my PowermacG5 in 2025 - and something else</description><language>en</language>
-<lastBuildDate>Thu, 08 May 2025 21:53:49 +0200</lastBuildDate>
-<pubDate>Thu, 08 May 2025 21:53:49 +0200</pubDate>
+<lastBuildDate>Sun, 11 May 2025 20:34:24 +0200</lastBuildDate>
+<pubDate>Sun, 11 May 2025 20:34:24 +0200</pubDate>
 <atom:link href="https://apfelhammer.de/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+TermNavi is renamed in TerminalDrome
+</title><description><![CDATA[
+
+<p>Because there's already a Terminal Navidrome client called NaviTerm, and I don't really like my name TermNavi, I decided to rename my software TerminalDrome. Of course, that sounds completely stupid, but at least it's better than a copy.</p>
+
+<p>I think my software will soon become famous.</p>
+
+<p>Oh, and it doesn't even work properly yet. :-)</p>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/termnavi-is-renamed-in-terminaldrome.html</link>
+<guid>https://apfelhammer.de/./termnavi-is-renamed-in-terminaldrome.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Sun, 11 May 2025 20:34:19 +0200</pubDate></item>
 <item><title>
 TermNavi Terminal Navidrome Client ppc64
 </title><description><![CDATA[
@@ -342,59 +359,4 @@ keyboard when in the OpenFirmware user interface.</p>
 <guid>https://apfelhammer.de/./backslash-german-imac-keyboard-and-openfirmware.html</guid>
 <dc:creator>Jan Montag</dc:creator>
 <pubDate>Mon, 24 Feb 2025 09:46:23 +0100</pubDate></item>
-<item><title>
-Mac OS X 10.5.8 with modern Browser
-</title><description><![CDATA[
-
-<p>As you can see in the screenshot, I am visiting both my weblog and amazon.de
-Websites with the Powermac G5 2,0 GHz. This is only possible because there
-is a relative modern webbrowser (2022) by user wicknix, built upon <strong>TenFourFox</strong>.</p>
-
-<p><a href="images/interweb.png"><img src="images/interweb.jpg" alt="" title="" /></a>
-<small>InterWebPPC: Mozilla for Power Macintosh</small></p>
-
-<p>So with this webbrowser the old 20 years old Powermac is able to visit modern
-websites like Amazon. No, I dont like amazon, but is is an example. Youtube
-also works, but loads a lot longer.</p>
-
-<p>With this browser it is possible to use the mac in a day to day modern web world,
-but slow. I can even access webmails, read yahoo news or something like that
-while chatting via <em>colloguy</em> and telnetting into my server.</p>
-
-<p>Really sad to read this: </p>
-
-<blockquote>
-  <p>This repository has been archived by the owner on Jul 26, 2023. It is now read-only.</p>
-</blockquote>
-
-<p>Another good one is gone, but wicknix do have his reasons I bet.</p>
-
-<h3>Ressources</h3>
-
-<ul>
-<li>https://github.com/wicknix/InterWebPPC</li>
-</ul>
-
-<p>Tags: <a href='tag_macosx.html'>macosx</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_firefox.html'>firefox</a>, <a href='tag_leopard.html'>leopard</a></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- text end -->
-<br /><hr style="width:75%;text-align:left;margin-left:5">
-]]></description><link>https://apfelhammer.de/mac-os-x-1058-with-modern-browser.html</link>
-<guid>https://apfelhammer.de/./mac-os-x-1058-with-modern-browser.html</guid>
-<dc:creator>Jan Montag</dc:creator>
-<pubDate>Sat, 15 Feb 2025 14:50:45 +0100</pubDate></item>
 </channel></rss>
