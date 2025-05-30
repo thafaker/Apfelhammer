@@ -4,7 +4,12 @@ Because there's already a Terminal Navidrome client called NaviTerm, and I don't
 
 I think my software will soon become famous.
 
+![](/images/navidrome.png)
+
 Oh, and it doesn't even work properly yet. :-)
+
+### Ressources
+* [TerminalDrome Github Repo](https://github.com/thafaker/termnavi/tree/main)
 
 Tags: ppc64, navidrome, rust, terminal, powermacg5, linux, termnavi, terminaldrome
 

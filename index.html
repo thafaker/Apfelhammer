@@ -55,10 +55,205 @@
 <h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
 <div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
 <hr>
-<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> | <a href=/tag_terminaldrome.html>TerminalDrome</a></nav>
 <hr>
 </div></div></div>
 <div id="divbody"><div class="content">
+<h3><a class="ablack" href="terminaldrome-020-is-available.html">
+TerminalDrome 0.2.0 is available
+</a></h3>
+<!-- bashblog_timestamp: #202505210755.56# -->
+<div class="subtitle">May 21, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I am proud to announce the release of <strong>TerminalDrome</strong> 0.2.0 as a feature-rich
+stable version to the public. It is still alpha but it works on a daily basis
+here on my Powermac G5 or the Mac Mini M4. </p>
+
+<p><img src="/images/terminal_drome_splash.png" alt="" title="" />
+<small>TerminalDrome Splash Screen</small></p>
+
+<p>There are <a href="https://github.com/thafaker/termnavi/releases/tag/v0.2.0">compiled binaries</a> available for arm64, ppc64 and armhf. But TerminalDrome
+will build on every Linux with Rust and Cargo.</p>
+
+<h2>Status</h2>
+
+<ul>
+<li>Absolute pre-alpha!!!</li>
+<li>Scrobbling to last.fm and listen.brainz works via Navidrome</li>
+<li>Track updates while playing. Once a song finishes, it automatically switches to the next one and updates the display accordingly.</li>
+<li>A basic full-text search is implemented: press the slash <code>/</code> key to open the search window, enter a term, and the results will appear in the third pane.</li>
+<li>Basic Help Screen via Shift+H Button.</li>
+<li>Splash Start Screen :-)</li>
+<li>Nice Status Bar at the bottom</li>
+</ul>
+
+<p><img src="/images/terminaldrome_powermac_playing.png" alt="" title="" />
+<small>TerminalDrome is playing a song on my Powermac G5</small></p>
+
+<h2>✨ Key Features of TerminalDrome</h2>
+
+<ol>
+<li><p>Navidrome Integration  </p>
+
+<ul>
+<li>Connects to your Navidrome server (HTTPS enforced)  </li>
+<li>Supports all Subsonic API endpoints (Artists, Albums, Songs)</li>
+</ul></li>
+<li><p>TUI (Terminal UI) with 3-column layout  </p>
+
+<ul>
+<li>Artists → Albums → Songs  </li>
+<li>Intuitive navigation using arrow keys  </li>
+<li>Colored highlights (active songs, selection, status)</li>
+</ul></li>
+<li><p>Music Playback  </p>
+
+<ul>
+<li>MPV integration (runs silently in the background)  </li>
+<li>Automatic transition to the next song (playlist mode)  </li>
+<li>Play/pause with spacebar  </li>
+<li>Progress bar and time display</li>
+</ul></li>
+<li><p>Last.fm Scrobbling  </p>
+
+<ul>
+<li>Automatically scrobbles at ~50% of the song duration  </li>
+<li>Correct timestamps (Unix milliseconds)  </li>
+<li>Avoids duplicates (via <code>current_scrobble_sent</code> flag)</li>
+</ul></li>
+<li><p>Persistence  </p>
+
+<ul>
+<li>Saves last state (<code>state.json</code>) <br />
+<ul>
+<li>Current artist/album/song  </li>
+<li>Scroll positions  </li>
+<li>Now-playing index  </li>
+</ul></li>
+<li>Stable MPV communication  </li>
+<li>Unix socket for real-time updates (playlist position, time)  </li>
+<li>Correct handling of playlist end  </li>
+<li>Minimal status bar  </li>
+<li>Displays current song + album/artist  </li>
+<li>Clear error messages (e.g. for connection problems)</li>
+</ul></li>
+</ol>
+
+<p><img src="/images/terminaldrome_help.png" alt="" title="" />
+<small>TerminalDrome Help Screen</small></p>
+
+<h2>🔧 Technical Highlights</h2>
+
+<ul>
+<li>Written in Rust (fast &amp; safe)  </li>
+<li>Async/await for non-blocking I/O  </li>
+<li>Atomic operations for thread-safe state (MPV ↔ UI)  </li>
+<li>TOML configuration (server URL, credentials)</li>
+</ul>
+
+<h2>🚀 Roadmap Ideas (optional)</h2>
+
+<ul>
+<li>Search filtering in lists  </li>
+<li>Shuffle/repeat modes  </li>
+<li>Cover art (via Sixel or ASCII art)  </li>
+<li>Theme support (color schemes)</li>
+</ul>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/releases/tag/v0.2.0">TerminalDrome Release 0.2.0</a></li>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TerminalDrome Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="new-release-of-terminaldrome-on-github.html">
+New Release of TerminalDrome on Github
+</a></h3>
+<!-- bashblog_timestamp: #202505190904.56# -->
+<div class="subtitle">May 19, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>Since I recently discovered how relaxing programming can be, I've been tinkering with my Navidrome-compatible terminal client called TerminalDrome almost every day.</p>
+
+<p>I've now integrated a new feature, which I've moved to Main:</p>
+
+<p>A simple search function:</p>
+
+<ul>
+<li>Press slash / and the search will open.</li>
+<li>Enter the search term, press Enter, and you'll see the search results in the right panel.</li>
+<li>It's neither alphabetically sorted nor otherwise organized.</li>
+<li>Additionally, there's a feature in the leftmost panel where you can jump directly to the beginning of the respective artist by pressing a letter of your choice. So if I press D, I'll land on D.A.F., or Q on Queens Of The Stone Age—you get it?</li>
+</ul>
+
+<p><img src="/images/terminaldrome_searchj.png" alt="" title="" />
+<small>My TerminalDrome CLient in Search Mode</small></p>
+
+<p>I'm very proud.</p>
+
+<p>TerminalDrome is written in Rust and can be downloaded and compiled using the following command. You'll need the Rust toolchain and mpv.</p>
+
+<pre><code>git clone https://github.com/thafaker/termnavi.git TerminalDrome
+cd TerminalDrome
+cargo build &amp;&amp; cargo run
+</code></pre>
+
+<p>I've also explained this on my <a href="https://github.com/thafaker/termnavi/tree/main">Github repo</a>.</p>
+
+<p><img src="/images/terminaldrome_with_search.png" alt="" title="" />
+<small>TerminalDrome (left) near btop (right) on my Debian 13 Sid PowerPC Powermac G5</small></p>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="terminaldrome-is-evolving.html">
+TerminalDrome is evolving
+</a></h3>
+<!-- bashblog_timestamp: #202505140755.17# -->
+<div class="subtitle">May 14, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>My little Terminal Navidrome Project <strong>TerminalDrome</strong> is evolving and works
+a little bit better from day to day. So, what is working?</p>
+
+<p><img src="/images/terminaldrome.png" alt="" title="" /></p>
+
+<ul>
+<li>safes the state of the panes to come back later</li>
+<li>in pane 4 it shows the elapsed time and a small bar is going to 100%</li>
+<li>it plays the songs of an album from 1 to last</li>
+</ul>
+
+<p>What does not work:</p>
+
+<ul>
+<li>it won't changes the now playing bar when a new song is playing</li>
+</ul>
+
+<p>This is a screenshot of my real Powermac G5 running TerminalDrome in the wild.
+<a href="/images/TerminalDrome.png"><img src="/images/TerminalDrome.png" alt="" title="" /></a></p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TerminalDrome Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="termnavi-is-renamed-in-terminaldrome.html">
 TermNavi is renamed in TerminalDrome
 </a></h3>
@@ -72,9 +267,18 @@ Jan Montag
 
 <p>I think my software will soon become famous.</p>
 
+<p><img src="/images/navidrome.png" alt="" title="" /></p>
+
 <p>Oh, and it doesn't even work properly yet. :-)</p>
 
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TerminalDrome Github Repo</a></li>
+</ul>
+
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="termnavi-terminal-navidrome-client-ppc64.html">
@@ -127,7 +331,8 @@ going on and I have everything in one file, the main.rs :-)</p>
 <li><a href="https://github.com/thafaker/termnavi/tree/main">TermNavi Github Repo</a></li>
 </ul>
 
-<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a></p>
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="claws-mail-431-archpower-linux-successfully-compiled.html">
@@ -175,6 +380,7 @@ not forget my ancient hardware from 2005 :-)</p>
 </ul>
 
 <p>Tags: <a href='tag_archlinux.html'>archlinux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_email.html'>email</a>, <a href='tag_ppc.html'>ppc</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="hello-archpower-linux-for-ppc64.html">
@@ -239,112 +445,6 @@ But it starts while compiling gcc. I am unable to compile GCC. And
 without GCC there is no way to compile anything further.</p>
 
 <p class="readmore"><a href="./hello-t2linux-2504---i-switched-back-to-1224.html">Read more...</a></p>
-<br /><hr style="width:75%;text-align:left;margin-left:5">
-<h3><a class="ablack" href="how-do-i-run-update-grub-from-another-partition-or-a-livecd.html">
-How do I run update-grub from another Partition or a LiveCD?
-</a></h3>
-<!-- bashblog_timestamp: #202504171756.13# -->
-<div class="subtitle">April 17, 2025 &mdash; 
-Jan Montag
-</div>
-<!-- text begin -->
-
-<p>As you know my Setup, I will shortly explain again. In my Powermac G5 there is 
-an SATA-SSD as a replacement for the old spinning Apple HDD. On this SSD I 
-installed Mac OX 10.5 and also Debian SID for PPC, to get the Partition-Scheme
-and GRUB installed.</p>
-
-<p>I also built in a NVMe-SSD with 1 TB because the Powermac11,2 has PCI-Express
-Slots like it is standard nowadays. The OpenFirmware in the Powermac doesn't 
-know what an NVMe-SSD is and therefore can't recognize it or boot it. Also 
-Mac OS X 10.5 doesn't <em>see</em> the device. The technic is too young and there are
-no drivers, that is the reason for that.</p>
-
-<p>But lucklily, Linux has the drivers for that. And that's the reason for my Setup.
-Boot Grub from SSD because that can the Powermac. Than load the things you need
-for NVMe and boot the linux off the NVMe-SSD.</p>
-
-<p>I have 4 Linux on that NVMe-SSD and that works great. But it is a problem to 
-update the Grub Bootloader everytime there is a new kernerl or something other
-changed. Long story short, here I will tell (me) you, how to update grub via chroot.</p>
-
-<p class="readmore"><a href="./how-do-i-run-update-grub-from-another-partition-or-a-livecd.html">Read more...</a></p>
-<br /><hr style="width:75%;text-align:left;margin-left:5">
-<h3><a class="ablack" href="feedos-14-is-there.html">
-FeeDOS 1.4 is there
-</a></h3>
-<!-- bashblog_timestamp: #202504162306.58# -->
-<div class="subtitle">April 16, 2025 &mdash; 
-Jan Montag
-</div>
-<!-- text begin -->
-
-<p><img src="/images/screenshot_freedos14.png" alt="" title="" />
-<small>FreeDoS 1.4 Screenshot by freedos.org</small></p>
-
-<p>As you all know, I'm a big fan of vintage computers. In addition to an iMac G3, a C64, and an Amiga 500/1200, I also run an MS-DOS PC with Windows 3.11 and networking capabilities. To enable file sharing, I have a small Samba 1 server running.</p>
-
-<p>So it's all the more exciting to see that the fantastic FreeDOS project has released a new version. FreeDOS 1.4 is here.</p>
-
-<blockquote>
-  <p>FreeDOS is an open source DOS-compatible operating system that you can use to play classic DOS games, run legacy business software, or write new DOS programs. Any program that works on MS-DOS should also run on FreeDOS.</p>
-</blockquote>
-
-<p>FreeDOS runs on everything, from CD-Rom or USB. FreeDOS 1.4 even includes a floppy-only edition! This edition should run on any original IBM PC system, including the PC, XT, and AT. Provides versions for 720kB, 1.2MB, and 1.44MB floppy disks.</p>
-
-<p>(<a href="https://medium.com/@Re-News/freedos-1-4-8232422f2549">via</a>)</p>
-
-<h2>Ressources</h2>
-
-<ul>
-<li><a href="https://freedos.org">FreeDOS Website</a></li>
-<li><a href="https://freedos.org/download/">FreeDOS 1.4 Download</a></li>
-</ul>
-
-<p>Tags: <a href='tag_freedos.html'>freedos</a></p>
-
-
-
-
-<!-- text end -->
-<br /><hr style="width:75%;text-align:left;margin-left:5">
-<h3><a class="ablack" href="release-t2-linux-254-it-only-does-everything.html">
-Release: T2 Linux 25.4 "It Only Does Everything"
-</a></h3>
-<!-- bashblog_timestamp: #202504141557.55# -->
-<div class="subtitle">April 14, 2025 &mdash; 
-Jan Montag
-</div>
-<!-- text begin -->
-
-<p>A lot of crazy things happen right now. A few minutes ago <a href="https://apfelhammer.de/update-to-fienix-linux.html">I reported about the
-living sign of Fienix</a> Linux after the APT Repo down and now I see there is a
-<a href="https://t2sde.org/#news-2025-04-14">new version of latest and greatest T2 Linux</a> (ver. 25.4) from Rene Rebe. </p>
-
-<blockquote>
-  <p>With a total of 17 pre-compiled base install ISOs for various Glibc, Musl and uClibc combinations are available for 12 CPU ISAs: Alpha, ARM(64), HPPA64, IA64, MIPS64, PowerPC(64), RISCV64, SPARC64, i586, x86-64. On most architectures the release still boots with as little as 512MB of RAM or even less, and ISO downloads are less than 2GB for base Wayland desktop with Firefox.</p>
-</blockquote>
-
-<p>T2 runs well on my <em>Powermac G5</em>, as I stated <a href="https://apfelhammer.de/new-release-of-t2linux.html">here</a> for detail.</p>
-
-<h2>Ressources</h2>
-
-<ul>
-<li><a href="https://t2sde.org/#news-2025-04-14">T2/SDE 25.4 announcement</a></li>
-<li><a href="https://t2sde.org/download/25.4">T2 Download Portal for 25.4</a></li>
-<li><a href="https://dl.t2sde.org/binary/2025/t2-25.4-ppc6432-base-wayland-glibc-gcc-power4.iso">T2 Linux for direct download for PPC64/32</a> (64-bit OS kernel, 32-bit user-space)</li>
-<li><a href="https://t2sde.org">T2 Main Website</a></li>
-<li><a href="https://t2sde.org/documentation/buildintro.html">Quick Build in seven-1 easy steps</a></li>
-<li><a href="https://t2sde.org/documentation/kb/8/?documentation/kb/8">Getting started w/ a fresh T2 install</a></li>
-<li><a href="https://medium.com/@Re-News">Rene Rebes Medium Blog</a></li>
-</ul>
-
-<p>Tags: <a href='tag_t2linux.html'>t2linux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a></p>
-
-
-
-
-<!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <div id="all_posts"><a href="all_posts.html">View more posts</a> &mdash; <a href="all_tags.html">All tags</a> &mdash; <a href="feed.rss">Subscribe</a></div>
 </div>

@@ -981,7 +981,7 @@ create_includes() {
         echo "<h1 class=\"nomargin\"><a class=\"ablack\" href=\"$global_url/$index_file\">$global_title</a></h1>" 
         echo "<div id=\"description\">$global_description</div>"
 		echo "<hr>"
-		echo "<nav class="menu"> <a href="./">home</a> | <a href="./about.html">about</a> | <a href="./links.html">links</a> | <a href="/all_tags.html">tags</a> | <a href="/feed.rss">feed</a> </nav>"
+		echo "<nav class="menu"> <a href="./">home</a> | <a href="./about.html">about</a> | <a href="./links.html">links</a> | <a href="/all_tags.html">tags</a> | <a href="/feed.rss">feed</a> | <a href="/tag_terminaldrome.html">TerminalDrome</a></nav>"
 		echo "<hr>"
     } > ".title.html"
 

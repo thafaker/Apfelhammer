@@ -55,10 +55,205 @@
 <h1 class="nomargin"><a class="ablack" href="https://apfelhammer.de/index.html">This Is Apfelhammer!</a></h1>
 <div id="description">a blog about my PowermacG5 in 2025 - and something else</div>
 <hr>
-<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> </nav>
+<nav class=menu> <a href=./>home</a> | <a href=./about.html>about</a> | <a href=./links.html>links</a> | <a href=/all_tags.html>tags</a> | <a href=/feed.rss>feed</a> | <a href=/tag_terminaldrome.html>TerminalDrome</a></nav>
 <hr>
 </div></div></div>
 <div id="divbody"><div class="content">
+<h3><a class="ablack" href="terminaldrome-020-is-available.html">
+TerminalDrome 0.2.0 is available
+</a></h3>
+<!-- bashblog_timestamp: #202505210755.56# -->
+<div class="subtitle">May 21, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I am proud to announce the release of <strong>TerminalDrome</strong> 0.2.0 as a feature-rich
+stable version to the public. It is still alpha but it works on a daily basis
+here on my Powermac G5 or the Mac Mini M4. </p>
+
+<p><img src="/images/terminal_drome_splash.png" alt="" title="" />
+<small>TerminalDrome Splash Screen</small></p>
+
+<p>There are <a href="https://github.com/thafaker/termnavi/releases/tag/v0.2.0">compiled binaries</a> available for arm64, ppc64 and armhf. But TerminalDrome
+will build on every Linux with Rust and Cargo.</p>
+
+<h2>Status</h2>
+
+<ul>
+<li>Absolute pre-alpha!!!</li>
+<li>Scrobbling to last.fm and listen.brainz works via Navidrome</li>
+<li>Track updates while playing. Once a song finishes, it automatically switches to the next one and updates the display accordingly.</li>
+<li>A basic full-text search is implemented: press the slash <code>/</code> key to open the search window, enter a term, and the results will appear in the third pane.</li>
+<li>Basic Help Screen via Shift+H Button.</li>
+<li>Splash Start Screen :-)</li>
+<li>Nice Status Bar at the bottom</li>
+</ul>
+
+<p><img src="/images/terminaldrome_powermac_playing.png" alt="" title="" />
+<small>TerminalDrome is playing a song on my Powermac G5</small></p>
+
+<h2>✨ Key Features of TerminalDrome</h2>
+
+<ol>
+<li><p>Navidrome Integration  </p>
+
+<ul>
+<li>Connects to your Navidrome server (HTTPS enforced)  </li>
+<li>Supports all Subsonic API endpoints (Artists, Albums, Songs)</li>
+</ul></li>
+<li><p>TUI (Terminal UI) with 3-column layout  </p>
+
+<ul>
+<li>Artists → Albums → Songs  </li>
+<li>Intuitive navigation using arrow keys  </li>
+<li>Colored highlights (active songs, selection, status)</li>
+</ul></li>
+<li><p>Music Playback  </p>
+
+<ul>
+<li>MPV integration (runs silently in the background)  </li>
+<li>Automatic transition to the next song (playlist mode)  </li>
+<li>Play/pause with spacebar  </li>
+<li>Progress bar and time display</li>
+</ul></li>
+<li><p>Last.fm Scrobbling  </p>
+
+<ul>
+<li>Automatically scrobbles at ~50% of the song duration  </li>
+<li>Correct timestamps (Unix milliseconds)  </li>
+<li>Avoids duplicates (via <code>current_scrobble_sent</code> flag)</li>
+</ul></li>
+<li><p>Persistence  </p>
+
+<ul>
+<li>Saves last state (<code>state.json</code>) <br />
+<ul>
+<li>Current artist/album/song  </li>
+<li>Scroll positions  </li>
+<li>Now-playing index  </li>
+</ul></li>
+<li>Stable MPV communication  </li>
+<li>Unix socket for real-time updates (playlist position, time)  </li>
+<li>Correct handling of playlist end  </li>
+<li>Minimal status bar  </li>
+<li>Displays current song + album/artist  </li>
+<li>Clear error messages (e.g. for connection problems)</li>
+</ul></li>
+</ol>
+
+<p><img src="/images/terminaldrome_help.png" alt="" title="" />
+<small>TerminalDrome Help Screen</small></p>
+
+<h2>🔧 Technical Highlights</h2>
+
+<ul>
+<li>Written in Rust (fast &amp; safe)  </li>
+<li>Async/await for non-blocking I/O  </li>
+<li>Atomic operations for thread-safe state (MPV ↔ UI)  </li>
+<li>TOML configuration (server URL, credentials)</li>
+</ul>
+
+<h2>🚀 Roadmap Ideas (optional)</h2>
+
+<ul>
+<li>Search filtering in lists  </li>
+<li>Shuffle/repeat modes  </li>
+<li>Cover art (via Sixel or ASCII art)  </li>
+<li>Theme support (color schemes)</li>
+</ul>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/releases/tag/v0.2.0">TerminalDrome Release 0.2.0</a></li>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TerminalDrome Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="new-release-of-terminaldrome-on-github.html">
+New Release of TerminalDrome on Github
+</a></h3>
+<!-- bashblog_timestamp: #202505190904.56# -->
+<div class="subtitle">May 19, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>Since I recently discovered how relaxing programming can be, I've been tinkering with my Navidrome-compatible terminal client called TerminalDrome almost every day.</p>
+
+<p>I've now integrated a new feature, which I've moved to Main:</p>
+
+<p>A simple search function:</p>
+
+<ul>
+<li>Press slash / and the search will open.</li>
+<li>Enter the search term, press Enter, and you'll see the search results in the right panel.</li>
+<li>It's neither alphabetically sorted nor otherwise organized.</li>
+<li>Additionally, there's a feature in the leftmost panel where you can jump directly to the beginning of the respective artist by pressing a letter of your choice. So if I press D, I'll land on D.A.F., or Q on Queens Of The Stone Age—you get it?</li>
+</ul>
+
+<p><img src="/images/terminaldrome_searchj.png" alt="" title="" />
+<small>My TerminalDrome CLient in Search Mode</small></p>
+
+<p>I'm very proud.</p>
+
+<p>TerminalDrome is written in Rust and can be downloaded and compiled using the following command. You'll need the Rust toolchain and mpv.</p>
+
+<pre><code>git clone https://github.com/thafaker/termnavi.git TerminalDrome
+cd TerminalDrome
+cargo build &amp;&amp; cargo run
+</code></pre>
+
+<p>I've also explained this on my <a href="https://github.com/thafaker/termnavi/tree/main">Github repo</a>.</p>
+
+<p><img src="/images/terminaldrome_with_search.png" alt="" title="" />
+<small>TerminalDrome (left) near btop (right) on my Debian 13 Sid PowerPC Powermac G5</small></p>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+<h3><a class="ablack" href="terminaldrome-is-evolving.html">
+TerminalDrome is evolving
+</a></h3>
+<!-- bashblog_timestamp: #202505140755.17# -->
+<div class="subtitle">May 14, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>My little Terminal Navidrome Project <strong>TerminalDrome</strong> is evolving and works
+a little bit better from day to day. So, what is working?</p>
+
+<p><img src="/images/terminaldrome.png" alt="" title="" /></p>
+
+<ul>
+<li>safes the state of the panes to come back later</li>
+<li>in pane 4 it shows the elapsed time and a small bar is going to 100%</li>
+<li>it plays the songs of an album from 1 to last</li>
+</ul>
+
+<p>What does not work:</p>
+
+<ul>
+<li>it won't changes the now playing bar when a new song is playing</li>
+</ul>
+
+<p>This is a screenshot of my real Powermac G5 running TerminalDrome in the wild.
+<a href="/images/TerminalDrome.png"><img src="/images/TerminalDrome.png" alt="" title="" /></a></p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TerminalDrome Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="termnavi-is-renamed-in-terminaldrome.html">
 TermNavi is renamed in TerminalDrome
 </a></h3>
@@ -72,9 +267,18 @@ Jan Montag
 
 <p>I think my software will soon become famous.</p>
 
+<p><img src="/images/navidrome.png" alt="" title="" /></p>
+
 <p>Oh, and it doesn't even work properly yet. :-)</p>
 
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TerminalDrome Github Repo</a></li>
+</ul>
+
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 </div>

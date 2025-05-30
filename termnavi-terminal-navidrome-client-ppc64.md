@@ -34,4 +34,4 @@ going on and I have everything in one file, the main.rs :-)
 ### Ressources
 * [TermNavi Github Repo](https://github.com/thafaker/termnavi/tree/main)
 
-Tags: ppc64, navidrome, rust, terminal, powermacg5, linux
+Tags: ppc64, navidrome, rust, terminal, powermacg5, linux, terminaldrome
