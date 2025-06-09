@@ -3,15 +3,19 @@
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="canonical" href="https://apfelhammer.de">
-<!-- Die H-Karte Junge -->
-<div class="h-card" style="display: none;">
+ <!-- Die H-Karte Junge -->
+ <div class="h-card" style="display: none;">
     <a class="u-url" href="https://apfelhammer.de" style="display: none;">Apfelhammer</a>
     <a class="u-url" href="https://thahipster.de" style="display: none;">thahipster.de</a>
-    <a class="u-url" href="https://herrmontag.de" style="display: none;">HerrMontag.de</a>
-    <p class="p-name">Jan Montag</p>
-    <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
-</div>
+ <a class="u-url" href="https://herrmontag.de" style="display: none;">.macroblog HerrMontag.de</a>
+ <a class="u-url" href="https://janmontag.de" style="display: none;">.microblog JanMontag.de</a>
+ <p class="p-note">Herr Montag being the Web since 1997. Herr Montag works and lives in Erfurt, Thuringia, Germany.</p>
+ <p class="p-name">Jan Montag</p>
+ <img class="u-photo" src="https://apfelhammer.de/images/herrmontag.JPG" alt="Profilbild" style="display: none;">
+ </div>
+ <!-- Die H-Karte Junge --> 
 		<!-- all rel mes -->
+ 			<link rel="me" href="mailto:hallo@herrmontag.de"> 
 			<link rel="me" href="https://thahipster.de" />
 			<link rel="me" href="https://thafaker.crabdance.com" />
 			<link rel="me" href="https://janmontag.de" />
@@ -59,6 +63,95 @@
 <hr>
 </div></div></div>
 <div id="divbody"><div class="content">
+<h3><a class="ablack" href="new-version-022-of-terminaldrome.html">
+New Version 0.2.2 of TerminalDrome
+</a></h3>
+<!-- bashblog_timestamp: #202506021647.10# -->
+<div class="subtitle">June 02, 2025 &mdash; 
+Jan Montag
+</div>
+<!-- text begin -->
+
+<p>I just finished the work on TerminalDrome 0.2.2 and I am really proud of it,
+because I don't know nothing about Rust but the Terminal NaviDrome Client is
+running very well :-) </p>
+
+<p><img src="/images/terminaldrome_cover_here.png" alt="" title="" />
+<small>TerminalDrome started, Cover Art, no artist or album chosen</small></p>
+
+<h3>Whats is new?</h3>
+
+<ul>
+<li>Implemented cover art: terminaldrome is downloading the cover art of the album
+if available and convert it to ASCII :-)</li>
+<li>Album Scrolling: while in album pane, there were no scrolling implemented and
+when there were more than 5 albums, you would not see them.</li>
+<li>fixed mute button</li>
+<li>updated splash screen :-)</li>
+<li>a lot of other improvements and fixes</li>
+</ul>
+
+<h3>What else?</h3>
+
+<p>Tested on:</p>
+
+<ul>
+<li>Powermac G5 (Debian, Arch, T2 Linux ppc64)</li>
+<li>Arm64 MacMini M4</li>
+<li>Macbook Pro 2016 with x86 Intel CPU</li>
+<li>ArmHF Device (Raspberry Pi like)</li>
+<li>...</li>
+</ul>
+
+<p>If you download and test it, please let me now if it works. Bug reports straight
+to this blog here. Thank you.</p>
+
+<h2>Build Instructions (short)</h2>
+
+<p>In this early stage, but TerminalDrome runs on a daily basis here, it is a good
+idea to let it run via <code>cargo run</code>. Short build instructions as follows:</p>
+
+<h3>🔧 Build with Cargo</h3>
+
+<pre><code>git clone https://github.com/thafaker/termnavi.git TerminalDrome
+</code></pre>
+
+<p>After the, change to TerminalDrome directory:</p>
+
+<pre><code>cd TerminalDrome
+</code></pre>
+
+<p>and create a file <code>config.toml</code>:</p>
+
+<pre><code>[server]
+url = "https://YourNaviDromeServer.de"
+username = "yourUser"
+password = "yourPass"
+</code></pre>
+
+<p>than:</p>
+
+<pre><code>#either (prefered)
+cargo run
+# or
+cargo build --release
+</code></pre>
+
+<p>Thats all, that should build and run TerminalDrome and let it run, connected
+to your NaviDrome Server.</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TerminalDrome Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_aarch64.html'>aarch64</a>, <a href='tag_arm64.html'>arm64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="terminaldrome-020-is-available.html">
 TerminalDrome 0.2.0 is available
 </a></h3>
@@ -171,6 +264,9 @@ will build on every Linux with Rust and Cargo.</p>
 </ul>
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="new-release-of-terminaldrome-on-github.html">
@@ -214,6 +310,9 @@ cargo build &amp;&amp; cargo run
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
 
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="terminaldrome-is-evolving.html">
@@ -252,6 +351,9 @@ a little bit better from day to day. So, what is working?</p>
 </ul>
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="termnavi-is-renamed-in-terminaldrome.html">
@@ -278,6 +380,9 @@ Jan Montag
 </ul>
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+
+
 
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
@@ -333,6 +438,9 @@ going on and I have everything in one file, the main.rs :-)</p>
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
 
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="claws-mail-431-archpower-linux-successfully-compiled.html">
@@ -381,6 +489,10 @@ not forget my ancient hardware from 2005 :-)</p>
 
 <p>Tags: <a href='tag_archlinux.html'>archlinux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_email.html'>email</a>, <a href='tag_ppc.html'>ppc</a>, <a href='tag_ppc64.html'>ppc64</a></p>
 
+
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="release-t2-linux-254-it-only-does-everything.html">
@@ -415,6 +527,9 @@ living sign of Fienix</a> Linux after the APT Repo down and now I see there is a
 </ul>
 
 <p>Tags: <a href='tag_t2linux.html'>t2linux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+
+
+
 
 
 
@@ -481,6 +596,9 @@ the developer is willing to continue. That gives me hope for my Powermac G5.</p>
 
 
 
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="fieneix-linux-seems-to-be-dead.html">
@@ -531,6 +649,10 @@ very expandable and usable.</p>
 
 
 
+
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="fienix-linux-for-ppc-computers.html">
@@ -549,7 +671,7 @@ powerpc first. I just tried to install it on my Powermac G5. And it works great!
 <p><a href="https://apfelhammer.de/images/fienix.png"><img src="images/fienix_smol.png" alt="Fienix Linux on Powermac G5" title="" /></a>
 <small>Fienix Linux 6.0.1 on my Powermac G5, on real Hardware.</small></p>
 
-<p class="readmore"><a href="fienix-linux-for-ppc-computers.html">Read more...</a></p>
+<p class="readmore"><a href="./fienix-linux-for-ppc-computers.html">Read more...</a></p>
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 <h3><a class="ablack" href="firefox-128-esr-on-ppc64-powermac-g5.html">
 Firefox 128-ESR on PPC64 Powermac G5
@@ -579,6 +701,10 @@ Firefox sooner than later on the other Distros too.</p>
 Jan</p>
 
 <p>Tags: <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_firefox.html'>firefox</a>, <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_linux.html'>linux</a></p>
+
+
+
+
 
 
 
@@ -652,6 +778,9 @@ lot of other new websites. It is usable.</p>
 <li>Linux on PowerPC Computers: <a href="https://thahipster.de/linux-auf-dem-powermac-g5/">https://thahipster.de/linux-auf-dem-powermac-g5/</a></li>
 <li>SeaLion on Github: <a href="https://github.com/wicknix/SeaLion/releases/tag/33.4.0">https://github.com/wicknix/SeaLion/releases/tag/33.4.0</a></li>
 </ul>
+
+
+
 
 
 

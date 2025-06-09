@@ -2,9 +2,97 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>This Is Apfelhammer!</title><link>https://apfelhammer.de/index.html</link>
 <description>a blog about my PowermacG5 in 2025 - and something else</description><language>en</language>
-<lastBuildDate>Wed, 21 May 2025 08:09:23 +0200</lastBuildDate>
-<pubDate>Wed, 21 May 2025 08:09:23 +0200</pubDate>
+<lastBuildDate>Sat, 07 Jun 2025 19:13:18 +0200</lastBuildDate>
+<pubDate>Sat, 07 Jun 2025 19:13:18 +0200</pubDate>
 <atom:link href="https://apfelhammer.de/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+New Version 0.2.2 of TerminalDrome
+</title><description><![CDATA[
+
+<p>I just finished the work on TerminalDrome 0.2.2 and I am really proud of it,
+because I don't know nothing about Rust but the Terminal NaviDrome Client is
+running very well :-) </p>
+
+<p><img src="/images/terminaldrome_cover_here.png" alt="" title="" />
+<small>TerminalDrome started, Cover Art, no artist or album chosen</small></p>
+
+<h3>Whats is new?</h3>
+
+<ul>
+<li>Implemented cover art: terminaldrome is downloading the cover art of the album
+if available and convert it to ASCII :-)</li>
+<li>Album Scrolling: while in album pane, there were no scrolling implemented and
+when there were more than 5 albums, you would not see them.</li>
+<li>fixed mute button</li>
+<li>updated splash screen :-)</li>
+<li>a lot of other improvements and fixes</li>
+</ul>
+
+<h3>What else?</h3>
+
+<p>Tested on:</p>
+
+<ul>
+<li>Powermac G5 (Debian, Arch, T2 Linux ppc64)</li>
+<li>Arm64 MacMini M4</li>
+<li>Macbook Pro 2016 with x86 Intel CPU</li>
+<li>ArmHF Device (Raspberry Pi like)</li>
+<li>...</li>
+</ul>
+
+<p>If you download and test it, please let me now if it works. Bug reports straight
+to this blog here. Thank you.</p>
+
+<h2>Build Instructions (short)</h2>
+
+<p>In this early stage, but TerminalDrome runs on a daily basis here, it is a good
+idea to let it run via <code>cargo run</code>. Short build instructions as follows:</p>
+
+<h3>🔧 Build with Cargo</h3>
+
+<pre><code>git clone https://github.com/thafaker/termnavi.git TerminalDrome
+</code></pre>
+
+<p>After the, change to TerminalDrome directory:</p>
+
+<pre><code>cd TerminalDrome
+</code></pre>
+
+<p>and create a file <code>config.toml</code>:</p>
+
+<pre><code>[server]
+url = "https://YourNaviDromeServer.de"
+username = "yourUser"
+password = "yourPass"
+</code></pre>
+
+<p>than:</p>
+
+<pre><code>#either (prefered)
+cargo run
+# or
+cargo build --release
+</code></pre>
+
+<p>Thats all, that should build and run TerminalDrome and let it run, connected
+to your NaviDrome Server.</p>
+
+<h3>Ressources</h3>
+
+<ul>
+<li><a href="https://github.com/thafaker/termnavi/tree/main">TerminalDrome Github Repo</a></li>
+</ul>
+
+<p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_aarch64.html'>aarch64</a>, <a href='tag_arm64.html'>arm64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+
+
+<!-- text end -->
+<br /><hr style="width:75%;text-align:left;margin-left:5">
+]]></description><link>https://apfelhammer.de/new-version-022-of-terminaldrome.html</link>
+<guid>https://apfelhammer.de/./new-version-022-of-terminaldrome.html</guid>
+<dc:creator>Jan Montag</dc:creator>
+<pubDate>Mon, 02 Jun 2025 16:47:10 +0200</pubDate></item>
 <item><title>
 TerminalDrome 0.2.0 is available
 </title><description><![CDATA[
@@ -112,6 +200,9 @@ will build on every Linux with Rust and Cargo.</p>
 </ul>
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 ]]></description><link>https://apfelhammer.de/terminaldrome-020-is-available.html</link>
@@ -154,6 +245,9 @@ cargo build &amp;&amp; cargo run
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
 
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 ]]></description><link>https://apfelhammer.de/new-release-of-terminaldrome-on-github.html</link>
@@ -191,6 +285,9 @@ a little bit better from day to day. So, what is working?</p>
 </ul>
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 ]]></description><link>https://apfelhammer.de/terminaldrome-is-evolving.html</link>
@@ -216,6 +313,9 @@ TermNavi is renamed in TerminalDrome
 </ul>
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_termnavi.html'>termnavi</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
+
+
+
 
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
@@ -270,6 +370,9 @@ going on and I have everything in one file, the main.rs :-)</p>
 
 <p>Tags: <a href='tag_ppc64.html'>ppc64</a>, <a href='tag_navidrome.html'>navidrome</a>, <a href='tag_rust.html'>rust</a>, <a href='tag_terminal.html'>terminal</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_terminaldrome.html'>terminaldrome</a></p>
 
+
+
+
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
 ]]></description><link>https://apfelhammer.de/termnavi-terminal-navidrome-client-ppc64.html</link>
@@ -316,6 +419,10 @@ not forget my ancient hardware from 2005 :-)</p>
 </ul>
 
 <p>Tags: <a href='tag_archlinux.html'>archlinux</a>, <a href='tag_powermacg5.html'>powermacg5</a>, <a href='tag_email.html'>email</a>, <a href='tag_ppc.html'>ppc</a>, <a href='tag_ppc64.html'>ppc64</a></p>
+
+
+
+
 
 <!-- text end -->
 <br /><hr style="width:75%;text-align:left;margin-left:5">
@@ -413,42 +520,4 @@ changed. Long story short, here I will tell (me) you, how to update grub via chr
 <guid>https://apfelhammer.de/./how-do-i-run-update-grub-from-another-partition-or-a-livecd.html</guid>
 <dc:creator>Jan Montag</dc:creator>
 <pubDate>Thu, 17 Apr 2025 17:56:13 +0200</pubDate></item>
-<item><title>
-FeeDOS 1.4 is there
-</title><description><![CDATA[
-
-<p><img src="/images/screenshot_freedos14.png" alt="" title="" />
-<small>FreeDoS 1.4 Screenshot by freedos.org</small></p>
-
-<p>As you all know, I'm a big fan of vintage computers. In addition to an iMac G3, a C64, and an Amiga 500/1200, I also run an MS-DOS PC with Windows 3.11 and networking capabilities. To enable file sharing, I have a small Samba 1 server running.</p>
-
-<p>So it's all the more exciting to see that the fantastic FreeDOS project has released a new version. FreeDOS 1.4 is here.</p>
-
-<blockquote>
-  <p>FreeDOS is an open source DOS-compatible operating system that you can use to play classic DOS games, run legacy business software, or write new DOS programs. Any program that works on MS-DOS should also run on FreeDOS.</p>
-</blockquote>
-
-<p>FreeDOS runs on everything, from CD-Rom or USB. FreeDOS 1.4 even includes a floppy-only edition! This edition should run on any original IBM PC system, including the PC, XT, and AT. Provides versions for 720kB, 1.2MB, and 1.44MB floppy disks.</p>
-
-<p>(<a href="https://medium.com/@Re-News/freedos-1-4-8232422f2549">via</a>)</p>
-
-<h2>Ressources</h2>
-
-<ul>
-<li><a href="https://freedos.org">FreeDOS Website</a></li>
-<li><a href="https://freedos.org/download/">FreeDOS 1.4 Download</a></li>
-</ul>
-
-<p>Tags: <a href='tag_freedos.html'>freedos</a></p>
-
-
-
-
-
-<!-- text end -->
-<br /><hr style="width:75%;text-align:left;margin-left:5">
-]]></description><link>https://apfelhammer.de/feedos-14-is-there.html</link>
-<guid>https://apfelhammer.de/./feedos-14-is-there.html</guid>
-<dc:creator>Jan Montag</dc:creator>
-<pubDate>Wed, 16 Apr 2025 23:06:58 +0200</pubDate></item>
 </channel></rss>
